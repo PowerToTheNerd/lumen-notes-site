@@ -1,0 +1,1139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumen Notes help</title>
+<meta name="description" content="How to use Lumen Notes, step by step.">
+<style>
+:root { color-scheme: light dark; --bg: #fbfbf8; --side: #f1f1ec; --text: #1d1f1b; --muted: #4b4f47; --line: #dcdcd4; --accent: #3e6b45; --code: #ecece5; }
+@media (prefers-color-scheme: dark) { :root { --bg: #1b1c1a; --side: #151614; --text: #e8e8e2; --muted: #b4b6ae; --line: #2e302c; --accent: #9ccb9a; --code: #272926; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--muted); font: 16px/1.7 Inter, "Segoe UI", system-ui, sans-serif; }
+.layout { display: flex; min-height: 100vh; }
+nav { flex: 0 0 260px; position: sticky; top: 0; align-self: flex-start; height: 100vh; overflow-y: auto; padding: 24px 16px; background: var(--side); border-right: 1px solid var(--line); }
+nav strong { display: block; margin: 0 8px 14px; color: var(--text); font-size: 18px; }
+nav a { display: block; padding: 6px 8px; border-radius: 6px; color: var(--muted); text-decoration: none; font-size: 14px; }
+nav a:hover { background: var(--line); color: var(--text); }
+main { flex: 1; min-width: 0; padding: 24px clamp(16px, 5vw, 56px) 80px; }
+section { max-width: 760px; padding-bottom: 28px; margin-bottom: 36px; border-bottom: 1px solid var(--line); scroll-margin-top: 16px; }
+h1 { color: var(--text); font-size: 30px; line-height: 1.2; margin: 24px 0 14px; }
+h2 { color: var(--text); font-size: 21px; margin: 34px 0 8px; }
+h3 { color: var(--text); font-size: 17px; margin: 26px 0 6px; }
+strong { color: var(--text); }
+a { color: var(--accent); }
+code { font: 0.88em ui-monospace, "Cascadia Code", Consolas, monospace; background: var(--code); padding: 1px 5px; border-radius: 4px; }
+pre { background: var(--code); border: 1px solid var(--line); border-radius: 8px; padding: 14px; overflow-x: auto; line-height: 1.55; }
+pre code { padding: 0; background: none; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; display: block; overflow-x: auto; }
+th, td { text-align: left; vertical-align: top; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+th { color: var(--text); }
+@media (max-width: 760px) { .layout { display: block; } nav { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--line); } }
+</style>
+</head>
+<body>
+<div class="layout">
+<nav aria-label="Topics">
+<strong>Lumen Notes help</strong>
+<a href="#getting-started">Getting started</a>
+<a href="#notes">Writing and organizing notes</a>
+<a href="#adding-blocks">Adding and arranging blocks</a>
+<a href="#block-reference">Every block</a>
+<a href="#review">Flashcards and review</a>
+<a href="#quizzes">Quizzes and practice</a>
+<a href="#home-planner-grades">Home, planner and grades</a>
+<a href="#paste-ai">Paste as visual notes (AI import)</a>
+<a href="#themes-backgrounds">Themes, backgrounds and page look</a>
+<a href="#settings">Settings</a>
+<a href="#sync-backup">Backups and sync</a>
+<a href="#export">Export and share</a>
+<a href="#privacy">Privacy</a>
+<a href="#shortcuts">Keyboard shortcuts</a>
+<a href="#troubleshooting">Troubleshooting</a>
+</nav>
+<main>
+<section id="getting-started">
+<h1>Getting started</h1>
+<p>Lumen Notes is a note app for studying. You write notes as plain text, and Lumen turns parts of them into things you can use: quizzes, flashcards, diagrams, charts and sliders. Your notes stay on your PC. There is no account.</p>
+<h2>Open Lumen and make a note</h2>
+<ol>
+<li>Open <strong>Lumen</strong> from the Start menu. It opens on <strong>Home</strong>.</li>
+<li>Press <strong>Ctrl+N</strong>, or click <strong>New note</strong> in the sidebar. A menu offers a blank note or a template (see <a href="#notes">Writing and organizing notes</a>).</li>
+<li>Type a title at the top and start writing.</li>
+</ol>
+<p>Lumen saves as you type. The saved indicator in the top bar shows when everything is written to disk.</p>
+<h2>Try an example first</h2>
+<p>Home shows a welcome card the first time you open Lumen. It has three ways to start:</p>
+<ul>
+<li><strong>Paste from an AI chat.</strong> Opens Paste as visual notes.</li>
+<li><strong>Explore the Thyroid page.</strong> A finished study page with a concept map, a simulator and a quiz. Click around in it.</li>
+<li><strong>Start from a template.</strong> Lecture notes, homework, a study guide, reading notes or a project log.</li>
+</ul>
+<p>The welcome card goes away when you dismiss it or once you have written your own notes.</p>
+<h2>The three views</h2>
+<p>Every note can be shown three ways. Switch with <strong>Ctrl+Shift+M</strong>, or with the buttons at the top of the note.</p>
+<table><thead><tr><th>View</th><th>What you see</th><th>Use it to</th></tr></thead><tbody><tr><td><strong>Visual</strong></td><td>The finished page. Quizzes, charts and diagrams work.</td><td>Read, study and make small edits.</td></tr><tr><td><strong>Source</strong></td><td>The plain text the page is made from.</td><td>Write exact text and blocks.</td></tr><tr><td><strong>Split</strong></td><td>Source on one side, the page on the other.</td><td>Watch a block appear as you type it.</td></tr></tbody></table>
+<p>Switching views never changes your text. If Lumen does not understand a piece of markup, it leaves the text alone and shows it as source with a short reason.</p>
+<h2>The sidebar</h2>
+<p>The sidebar lists the places in your workspace.</p>
+<table><thead><tr><th>Place</th><th>What it holds</th></tr></thead><tbody><tr><td><strong>Home</strong></td><td>Today: to-dos, the calendar, cards waiting for review, recent notes.</td></tr><tr><td><strong>Pages</strong></td><td>Notes of the kind <em>Page</em>, for reference material.</td></tr><tr><td><strong>Notes</strong></td><td>Notes of the kind <em>Note</em>, for everyday writing.</td></tr><tr><td><strong>Tasks</strong></td><td>Notes of the kind <em>Task</em>.</td></tr><tr><td><strong>Collections</strong></td><td>Your folders. A folder named <code>Science/Biology</code> sits inside <code>Science</code>.</td></tr><tr><td><strong>Favorites</strong></td><td>Notes you starred. They also appear under Pinned notes.</td></tr><tr><td><strong>Tags</strong></td><td>Every tag, and the notes that use it.</td></tr><tr><td><strong>Review</strong></td><td>Flashcards and questions that are due. A number shows how many.</td></tr><tr><td><strong>Graph</strong></td><td>A map of how your notes link to each other.</td></tr></tbody></table>
+<p>At the bottom are <strong>Import Markdown files</strong> and <strong>Settings</strong>. <strong>Ctrl+\</strong> hides or shows the sidebar. Turn on <strong>Auto-hide sidebar</strong> in Settings › Appearance › Window layout if you want it out of the way.</p>
+<h2>Find anything</h2>
+<p>Press <strong>Ctrl+K</strong>. Type part of a title, a word you remember, a tag like <code>#biology</code>, or a concept. Use the arrow keys to move, <strong>Tab</strong> to filter by kind, and <strong>Enter</strong> to open.</p>
+<h2>Where help is</h2>
+<p>The <strong>?</strong> button in the top bar opens this Help. <strong>Ctrl+F</strong> in Settings jumps to the settings search.</p>
+</section>
+<section id="notes">
+<h1>Writing and organizing notes</h1>
+<h2>Kinds, folders, tags and stars</h2>
+<p>Each note has a <strong>kind</strong>: <em>Note</em>, <em>Page</em> or <em>Task</em>. The kind decides which sidebar place lists it. It does not change what you can put in it.</p>
+<ul>
+<li><strong>Folders (Collections).</strong> Set a note&#x27;s collection in its properties. Use a slash for a folder inside a folder: <code>Science/Biology</code>. Right-click a folder and choose <strong>Customize…</strong> to give it a color and an icon.</li>
+<li><strong>Tags.</strong> Add tags in the note&#x27;s properties, or write <code>#tag</code> in search to find them. Turn on <strong>Pick tags automatically</strong> in Settings › Editor › Tags and Lumen suggests tags for new notes.</li>
+<li><strong>Favorites.</strong> Click the star at the top of a note.</li>
+<li><strong>Properties.</strong> Click <strong>+ Properties</strong> under the title to set the kind, collection and tags.</li>
+<li><strong>Icon and cover.</strong> Click the icon next to the title to pick an emoji. <strong>+ Customize page</strong> opens the icon, cover, font, width and music for that one page.</li>
+</ul>
+<h2>Typing in a note</h2>
+<p>A note is a list of <strong>blocks</strong>. A paragraph is a block, a heading is a block, a quiz is a block.</p>
+<ul>
+<li>Press <strong>Enter</strong> at the end of a paragraph to start a new text block.</li>
+<li>Double-click a text block to edit it. Bold is <strong>Ctrl+B</strong>, italic is <strong>Ctrl+I</strong>, underline is <strong>Ctrl+U</strong>.</li>
+<li>Start a line with <code>#</code>, <code>##</code> or <code>###</code> for headings. Start with <code>- </code> for a bullet list, <code>1. </code> for a numbered list and <code>- [ ] </code> for checkboxes.</li>
+<li>Put math between dollar signs: <code>$x^2$</code>, or between <code>$$</code> lines for its own line.</li>
+<li>Code goes between three backticks, with the language after the opening ones.</li>
+<li>Tables use the Markdown form: <code>| A | B |</code> with a <code>| --- | --- |</code> line under the first row.</li>
+</ul>
+<p>Press <strong>/</strong> while you are not typing in a field to add a block from a list (see <a href="#adding-blocks">Adding and arranging blocks</a>).</p>
+<h2>Links between notes</h2>
+<p>Write the title of another note between double square brackets:</p>
+<table><thead><tr><th>You write</th><th>You get</th></tr></thead><tbody><tr><td><code>[[Negative feedback]]</code></td><td>A link to that note.</td></tr><tr><td><code>[[Thyroid|the thyroid note]]</code></td><td>A link that shows your own words.</td></tr><tr><td><code>[[Thyroid#Feedback]]</code></td><td>A link to the &quot;Feedback&quot; heading inside that note.</td></tr></tbody></table>
+<p>A link to a note that does not exist yet is dashed. Click it and Lumen creates the note.</p>
+<p>Under every note Lumen shows:</p>
+<ul>
+<li><strong>Linked mentions.</strong> Notes that link here, with the sentence around the link.</li>
+<li><strong>Related notes.</strong> Notes that share tags, links or a folder, with the reason.</li>
+<li><strong>Not written yet.</strong> Links in this note that point to notes that do not exist, with a button to create each.</li>
+</ul>
+<p><strong>Graph</strong> in the sidebar draws every linked note. Turn on <strong>Tags</strong> to draw tags as dots too, or <strong>Notes without links</strong> to show the rest. Search in the graph by title, concept or <code>#tag</code>.</p>
+<h2>Templates</h2>
+<p><strong>New note</strong> offers templates:</p>
+<ul>
+<li><strong>Blank</strong></li>
+<li><strong>Lecture notes</strong> (titled with today&#x27;s date)</li>
+<li><strong>Homework set</strong> (dated)</li>
+<li><strong>Study guide</strong></li>
+<li><strong>Reading notes</strong></li>
+<li><strong>Project log</strong></li>
+</ul>
+<p>To make your own, open a note you like, click <strong>⋯</strong> and choose <strong>Save as template</strong>. It then shows under <strong>Your templates</strong>.</p>
+<h2>Version history and deleting</h2>
+<p><strong>⋯ › Version history</strong> lists earlier versions of the note. Open one to see it, then restore it.</p>
+<p><strong>⋯ › Duplicate note</strong> makes a copy. <strong>⋯ › Delete note</strong> removes the note and its review history. Before you delete many notes, make a backup (see <a href="#sync-backup">Backups and sync</a>).</p>
+<h2>Quick capture</h2>
+<p>Press <strong>Ctrl+Alt+Space</strong> from any app to open a small box. Type a thought, pick a folder and press <strong>Enter</strong>. It goes into today&#x27;s quick note or a new note. <strong>Esc</strong> cancels. It works while Lumen is minimized, and after you close the window if <strong>Keep running in the tray</strong> is on (it is by default). Change the shortcut or turn the tray off in Settings › Editor › Opening and capture. To quit Lumen completely, use the tray icon&#x27;s menu.</p>
+</section>
+<section id="adding-blocks">
+<h1>Adding and arranging blocks</h1>
+<h2>Add a block</h2>
+<p>Two ways:</p>
+<ol>
+<li>Press <strong>/</strong> while you are not typing in a text box. A list opens. Type to filter it, then press <strong>Enter</strong>.</li>
+<li>Type the block&#x27;s text yourself in Source or Split view.</li>
+</ol>
+<p>The whole list is on the <a href="#block-reference">Every block</a> page. The first four entries (Drawing, Picture, 3D model, 3D settings) open a picker. The rest add a working example you then change.</p>
+<h2>Change a block</h2>
+<ul>
+<li><strong>Text blocks:</strong> double-click and type.</li>
+<li><strong>Other blocks:</strong> point at the block and click <strong>Edit</strong>, or open its <strong>⋯</strong> menu and choose <strong>Edit block</strong>. The editor opens beside the note, and the block stays on screen as a live preview.</li>
+</ul>
+<p>In the editor:</p>
+<ul>
+<li>The outline on top lists the block&#x27;s parts. Click a part to edit it. The arrow keys move through the outline.</li>
+<li>Fields write straight into the block. Only the thing you changed is rewritten. Your spacing and order stay as you typed them.</li>
+<li>A value that would break the block is refused with the reason. The note keeps its last good version.</li>
+<li>Charts edit their data as a table. Quizzes mark the right answer with a round button.</li>
+<li><strong>Appearance</strong> sets alignment, text size, font, accent color, background strength, corner rounding and spacing for that one block.</li>
+<li><strong>Source</strong> shows the block&#x27;s own text.</li>
+<li><strong>Ctrl+Z</strong> and <strong>Ctrl+Shift+Z</strong> undo and redo.</li>
+</ul>
+<h2>Move blocks</h2>
+<ul>
+<li><strong>Drag</strong> a block by its ⋮⋮ handle. Drop it on the top or bottom half of another block to put it above or below.</li>
+<li><strong>Alt+↑</strong> and <strong>Alt+↓</strong> move the block you picked. The block&#x27;s <strong>⋯</strong> menu has move buttons too.</li>
+<li>While you drag near the top or bottom edge, the page scrolls.</li>
+</ul>
+<h2>Columns</h2>
+<p>Drop a block near the <strong>left or right edge</strong> of another block and the two sit side by side. A row holds up to four columns, and each column can hold several blocks. Columns stack when each would be narrower than 200 px.</p>
+<p><strong>Take out of columns</strong> in a block&#x27;s <strong>⋯</strong> menu puts it back below the row.</p>
+<p>In the source, columns are ordinary text between comments, so other Markdown apps just show the blocks one after another:</p>
+<pre><code class="language-markdown">&lt;!-- columns --&gt;
+
+## Hypothyroid
+
+Too little hormone.
+
+&lt;!-- column --&gt;
+
+## Hyperthyroid
+
+Too much hormone.
+
+&lt;!-- end columns --&gt;
+</code></pre>
+<h2>Select, copy and paste blocks</h2>
+<ul>
+<li><strong>Triple-click</strong> a block to select it. <strong>Ctrl+click</strong> or <strong>Shift+click</strong> adds more.</li>
+<li><strong>Ctrl+C</strong> copies the selected blocks. <strong>Ctrl+X</strong> cuts them. <strong>Ctrl+V</strong> pastes them at the bottom of the note. Right-click where you want them to go and choose paste to put them there.</li>
+<li>The copy is also plain Markdown, so you can paste it into another app.</li>
+</ul>
+<h2>The rules for block text</h2>
+<p>Blocks are written as small tags. You rarely need to write them yourself, but when you do:</p>
+<ul>
+<li>Put a block at the start of a line, with a blank line before and after it.</li>
+<li>Close every tag. <code>&lt;card title=&quot;Idea&quot;&gt;…&lt;/card&gt;</code>, or <code>&lt;flashcard … /&gt;</code> for a block with no content.</li>
+<li>Put attribute values in quotes.</li>
+<li>Give every interactive block an <code>id</code>. Lumen uses it to remember your answers. If you leave it out, Lumen adds one the first time you use the block.</li>
+<li>Inside a block, text is Markdown. If it has <code>&lt;</code> or <code>&amp;</code> in it, wrap it in <code>&lt;![CDATA[ … ]]&gt;</code>.</li>
+</ul>
+<p>Lumen forgives two common slips. A stray <code>&amp;</code> or <code>&lt;</code> in text (like <code>R&amp;D</code> or <code>&lt; 5%</code>) is read as the character itself. A block with a missing closing tag ends at the next blank line. Both still show up correctly, but write them properly when you can.</p>
+<p>Anything Lumen does not know stays in the note as visible source, with a short note about what is wrong. Nothing is deleted.</p>
+</section>
+<section id="block-reference">
+<h1>Every block</h1>
+<p>Add any of these from the <strong>/</strong> menu (see <a href="#adding-blocks">Adding and arranging blocks</a>). Each one below shows what it is for and the text Lumen puts in the note when you add it. You can change that text in <strong>Source</strong> or <strong>Split</strong> view, or with the block&#x27;s visual editor.</p>
+<p>Interactive blocks keep your answers, sliders and ticks in the note itself, so they come back the next time you open it. Blocks with an <code>id</code> keep that state when you move them, so leave the <code>id</code> alone.</p>
+<h2>Text and structure</h2>
+<p>Basic pieces that every note uses.</p>
+<h3>Heading</h3>
+<p>A section title. Headings fill the page outline and let you jump with links like <code>[[Note#Heading]]</code>.</p>
+<pre><code class="language-markdown">## A new thought
+</code></pre>
+<h3>Text</h3>
+<p>A normal paragraph. Double-click it to edit. Bold, italic, links and lists work as in any Markdown app.</p>
+<pre><code class="language-markdown">Start writing here.
+</code></pre>
+<h3>Task list</h3>
+<p>Checkboxes. Ticking one saves right away. Unticked items also show up in the To-dos card on Home, with the note they came from. Double-click a task&#x27;s words to edit the list as text.</p>
+<pre><code class="language-markdown">- [ ] First task
+- [ ] Next task
+</code></pre>
+<p><strong>Styles.</strong> Open the block&#x27;s <strong>⋯</strong> menu and pick a <strong>Task list style</strong>:</p>
+<ul>
+<li><strong>Plain</strong>: the list as it is.</li>
+<li><strong>Numbered steps</strong>: a number beside each box, for things done in order.</li>
+<li><strong>Cards</strong>: each task in its own tile.</li>
+<li><strong>Compact</strong>: tight rows and smaller text, for long lists.</li>
+<li><strong>Progress header</strong>: &quot;2 of 5&quot; and a bar above the list that fills as you tick.</li>
+<li><strong>Two columns</strong>: a long list flows into two columns (one on a narrow page).</li>
+</ul>
+<p>The same menu sets <strong>Align</strong> (left, centre, right) and <strong>Width</strong> (narrow, medium, full). A styled list is written as a <code>&lt;checklist&gt;</code> around the same tasks, and its tasks still show on Home and the Tasks page. Picking Plain, Left and Full turns it back into a plain list.</p>
+<pre><code class="language-xml">&lt;checklist id=&quot;checklist-1&quot; title=&quot;Meeting prep&quot; variant=&quot;progress&quot; align=&quot;center&quot; width=&quot;medium&quot;&gt;
+- [ ] General check in
+- [ ] Bring up linear algebra
+&lt;/checklist&gt;
+</code></pre>
+<h3>Equation</h3>
+<p>A formula typeset with LaTeX. Put it between <code>$$</code> lines for its own line, or between single <code>$</code> signs inside a sentence.</p>
+<pre><code class="language-markdown">$$
+E = mc^2
+$$
+</code></pre>
+<h3>Callout</h3>
+<p>A tinted box that makes one idea stand out. The word in brackets sets the kind: <code>info</code>, <code>tip</code>, <code>warning</code>, <code>danger</code>, <code>question</code>, <code>example</code> or <code>quote</code>.</p>
+<pre><code class="language-markdown">&gt; [!info] Worth remembering
+&gt; Add a useful insight here.
+</code></pre>
+<h3>Card</h3>
+<p>A framed box with a title. Put one focused idea in it. Cards can sit side by side in a grid.</p>
+<pre><code class="language-xml">&lt;card title=&quot;A useful idea&quot;&gt;
+Write your **Markdown** here.
+&lt;/card&gt;
+</code></pre>
+<h3>Divider</h3>
+<p>A line, dots or space between sections. Add <code>label</code> to put a word in the middle.</p>
+<pre><code class="language-xml">&lt;divider /&gt;
+</code></pre>
+<h3>Expandable section</h3>
+<p>Hides a worked answer or a long detail until you click it. It remembers whether it is open.</p>
+<pre><code class="language-xml">&lt;reveal id=&quot;reveal-1&quot; label=&quot;Show the worked example&quot;&gt;
+  &lt;text&gt;Write the hidden explanation here.&lt;/text&gt;
+&lt;/reveal&gt;
+</code></pre>
+<h3>Two columns</h3>
+<p>Two cards side by side. Change <code>columns</code> from 1 to 4. The columns stack when the window is narrow. You can also drag one block onto another block&#x27;s side to make columns (see <a href="#adding-blocks">Adding and arranging blocks</a>).</p>
+<pre><code class="language-xml">&lt;grid columns=&quot;2&quot;&gt;
+  &lt;card title=&quot;One perspective&quot;&gt;Add your notes.&lt;/card&gt;
+  &lt;card title=&quot;Another perspective&quot;&gt;Add your notes.&lt;/card&gt;
+&lt;/grid&gt;
+</code></pre>
+<h2>Questions and practice</h2>
+<p>Blocks you answer. Flashcards, practice questions and missed multiple choice questions also go into <strong>Review</strong> (see <a href="#review">Flashcards and review</a>).</p>
+<h3>Flashcard</h3>
+<p>A card that turns over. The front is the question, the back is the answer. It is added to Review.</p>
+<pre><code class="language-xml">&lt;flashcard id=&quot;flashcard-1&quot; front=&quot;A question to remember&quot; back=&quot;The answer is here.&quot; /&gt;
+</code></pre>
+<h3>Practice question</h3>
+<p>A question with a hidden answer. Click to reveal it. It is added to Review.</p>
+<pre><code class="language-xml">&lt;exercise id=&quot;exercise-1&quot; question=&quot;What did you learn?&quot; answer=&quot;Write your answer here.&quot; /&gt;
+</code></pre>
+<h3>Multiple choice</h3>
+<p>One question with options. <code>answer=&quot;0&quot;</code> means the first option is correct (counting starts at 0). Wrong answers are added to Review.</p>
+<pre><code class="language-xml">&lt;question id=&quot;quiz-1&quot; prompt=&quot;Choose the correct answer.&quot; answer=&quot;0&quot; explanation=&quot;Explain why here.&quot;&gt;
+  &lt;option&gt;Correct answer&lt;/option&gt;
+  &lt;option&gt;Another possibility&lt;/option&gt;
+&lt;/question&gt;
+</code></pre>
+<h3>Knowledge check with feedback</h3>
+<p>Several questions in one block, with a score, a progress bar and a reset. <code>layout=&quot;paged&quot;</code> shows one question at a time. Add <code>hint</code> to give a nudge.</p>
+<pre><code class="language-xml">&lt;quiz id=&quot;quiz-1&quot; title=&quot;Check your understanding&quot; tag=&quot;Practice&quot; layout=&quot;paged&quot;&gt;
+  &lt;question id=&quot;quiz-1-1&quot; prompt=&quot;Choose the correct answer.&quot; answer=&quot;0&quot; explanation=&quot;Explain why this is right.&quot; hint=&quot;An optional nudge.&quot;&gt;
+    &lt;option&gt;Correct answer&lt;/option&gt;
+    &lt;option&gt;Another possibility&lt;/option&gt;
+  &lt;/question&gt;
+  &lt;question id=&quot;quiz-1-2&quot; prompt=&quot;A second question.&quot; answer=&quot;1&quot; explanation=&quot;Explain the answer.&quot;&gt;
+    &lt;option&gt;Not this one&lt;/option&gt;
+    &lt;option&gt;This one&lt;/option&gt;
+  &lt;/question&gt;
+&lt;/quiz&gt;
+</code></pre>
+<h3>Fill in the blanks</h3>
+<p>A sentence with blanks. Write each answer between <code>{{</code> and <code>}}</code>. Use <code>|</code> between answers that are also correct. You type, press <strong>Check</strong>, and can press <strong>Show answers</strong>.</p>
+<pre><code class="language-xml">&lt;cloze id=&quot;cloze-1&quot; title=&quot;Fill in the blanks&quot;&gt;The {{mitochondrion}} makes most of the cell&#x27;s {{ATP|energy}}.&lt;/cloze&gt;
+</code></pre>
+<h3>Matching pairs</h3>
+<p>Two to twelve pairs. The right side is shuffled and you tap or drag to match, then see a score.</p>
+<pre><code class="language-xml">&lt;matching id=&quot;matching-1&quot; title=&quot;Match each term&quot;&gt;
+  &lt;pair left=&quot;Osmosis&quot; right=&quot;Water moving toward more solute&quot; /&gt;
+  &lt;pair left=&quot;Diffusion&quot; right=&quot;Particles spreading out&quot; /&gt;
+  &lt;pair left=&quot;Active transport&quot; right=&quot;Moving against a gradient using energy&quot; /&gt;
+&lt;/matching&gt;
+</code></pre>
+<h3>Ordering exercise</h3>
+<p>Two to twelve steps. Write them in the correct order. Lumen shuffles them and you put them back in order.</p>
+<pre><code class="language-xml">&lt;ordering id=&quot;ordering-1&quot; title=&quot;Put the stages in order&quot;&gt;
+  &lt;piece&gt;Glycolysis&lt;/piece&gt;
+  &lt;piece&gt;Krebs cycle&lt;/piece&gt;
+  &lt;piece&gt;Electron transport&lt;/piece&gt;
+&lt;/ordering&gt;
+</code></pre>
+<h3>Contrast table</h3>
+<p>Two things people mix up, side by side. Each <code>trait</code> is a row. <code>tell</code> is one line for telling them apart.</p>
+<pre><code class="language-xml">&lt;contrast id=&quot;contrast-1&quot; title=&quot;Mitosis or meiosis&quot; a=&quot;Mitosis&quot; b=&quot;Meiosis&quot; tell=&quot;Count the daughter cells: two means mitosis, four means meiosis.&quot;&gt;
+  &lt;trait label=&quot;Divisions&quot; a=&quot;One&quot; b=&quot;Two&quot; /&gt;
+  &lt;trait label=&quot;Daughter cells&quot; a=&quot;2, identical&quot; b=&quot;4, different&quot; /&gt;
+&lt;/contrast&gt;
+</code></pre>
+<h3>Glossary</h3>
+<p>Terms and definitions. <code>sort=&quot;true&quot;</code> puts them in A to Z order.</p>
+<pre><code class="language-xml">&lt;glossary id=&quot;glossary-1&quot; title=&quot;Key terms&quot; sort=&quot;true&quot;&gt;
+  &lt;term word=&quot;Osmosis&quot;&gt;&lt;text&gt;Water moving toward more solute.&lt;/text&gt;&lt;/term&gt;
+  &lt;term word=&quot;Diffusion&quot;&gt;&lt;text&gt;Particles spreading from high to low concentration.&lt;/text&gt;&lt;/term&gt;
+&lt;/glossary&gt;
+</code></pre>
+<h2>Diagrams and maps</h2>
+<p>Pictures of how things connect.</p>
+<h3>Concept map</h3>
+<p>Cards joined by arrows. Click a card to read its explanation. Use <strong>Focus</strong> to walk through it one step at a time.</p>
+<pre><code class="language-xml">&lt;diagram id=&quot;map-1&quot; type=&quot;concept&quot; title=&quot;How it connects&quot; badge=&quot;Concept map&quot;&gt;
+  &lt;node id=&quot;cause&quot; label=&quot;Cause&quot; badge=&quot;Signal&quot; icon=&quot;zap&quot; description=&quot;What starts the process.&quot; /&gt;
+  &lt;node id=&quot;process&quot; label=&quot;Process&quot; badge=&quot;Change&quot; icon=&quot;flow&quot; description=&quot;What happens next.&quot; /&gt;
+  &lt;node id=&quot;effect&quot; label=&quot;Effect&quot; badge=&quot;Result&quot; icon=&quot;target&quot; description=&quot;The outcome.&quot; /&gt;
+  &lt;edge from=&quot;cause&quot; to=&quot;process&quot; label=&quot;Triggers&quot; /&gt;
+  &lt;edge from=&quot;process&quot; to=&quot;effect&quot; label=&quot;Produces&quot; /&gt;
+  &lt;edge from=&quot;effect&quot; to=&quot;cause&quot; kind=&quot;feedback&quot; label=&quot;Feeds back&quot; /&gt;
+&lt;/diagram&gt;
+</code></pre>
+<h3>Diagram</h3>
+<p>An empty diagram. Open its editor and build it on a blank canvas. Use it for flowcharts, processes, timelines and dependency graphs.</p>
+<pre><code class="language-xml">&lt;diagram id=&quot;diagram-1&quot; title=&quot;New diagram&quot;&gt;
+&lt;/diagram&gt;
+</code></pre>
+<h3>Mermaid diagram</h3>
+<p>A diagram written as Mermaid text inside a code fence. Use this if you already have Mermaid from somewhere else.</p>
+<pre><code class="language-markdown">```mermaid
+flowchart LR
+  A[An idea] --&gt; B[A connection]
+  B --&gt; C[An insight]
+```
+</code></pre>
+<h3>Venn diagram</h3>
+<p>Two or three overlapping circles. <code>overlap</code> holds the text for where they meet.</p>
+<pre><code class="language-xml">&lt;venn id=&quot;venn-1&quot; title=&quot;Mitosis and meiosis&quot;&gt;
+  &lt;set label=&quot;Mitosis&quot;&gt;&lt;text&gt;One division, two identical cells.&lt;/text&gt;&lt;/set&gt;
+  &lt;set label=&quot;Meiosis&quot;&gt;&lt;text&gt;Two divisions, four different cells.&lt;/text&gt;&lt;/set&gt;
+  &lt;overlap sets=&quot;Mitosis, Meiosis&quot; label=&quot;DNA copied first&quot;&gt;&lt;text&gt;Both start by copying the DNA.&lt;/text&gt;&lt;/overlap&gt;
+&lt;/venn&gt;
+</code></pre>
+<h3>Tree</h3>
+<p>A hierarchy: a family, a classification, an outline. Nest <code>branch</code> inside <code>branch</code> (up to 8 levels).</p>
+<pre><code class="language-xml">&lt;tree id=&quot;tree-1&quot; title=&quot;Classification&quot;&gt;
+  &lt;branch label=&quot;Animals&quot;&gt;
+    &lt;branch label=&quot;Vertebrates&quot;&gt;
+      &lt;branch label=&quot;Mammals&quot; /&gt;
+      &lt;branch label=&quot;Birds&quot; /&gt;
+    &lt;/branch&gt;
+    &lt;branch label=&quot;Invertebrates&quot; /&gt;
+  &lt;/branch&gt;
+&lt;/tree&gt;
+</code></pre>
+<h3>Org chart</h3>
+<p>People and who reports to whom. Nest <code>person</code> inside <code>person</code>.</p>
+<pre><code class="language-xml">&lt;orgchart id=&quot;orgchart-1&quot; title=&quot;Team&quot;&gt;
+  &lt;person name=&quot;Dana Reyes&quot; role=&quot;Lead&quot;&gt;
+    &lt;person name=&quot;Sam Ortiz&quot; role=&quot;Designer&quot; /&gt;
+    &lt;person name=&quot;Lee Chen&quot; role=&quot;Engineer&quot; /&gt;
+  &lt;/person&gt;
+&lt;/orgchart&gt;
+</code></pre>
+<h3>2x2 matrix</h3>
+<p>Four boxes on two axes. The edge attributes name the axes. The quadrants go in this order: top left, top right, bottom left, bottom right.</p>
+<pre><code class="language-xml">&lt;matrix id=&quot;matrix-1&quot; title=&quot;Priorities&quot; yhigh=&quot;Important&quot; ylow=&quot;Not important&quot; xlow=&quot;Not urgent&quot; xhigh=&quot;Urgent&quot;&gt;
+  &lt;quadrant label=&quot;Plan&quot; tone=&quot;info&quot;&gt;&lt;text&gt;Important, not urgent.&lt;/text&gt;&lt;/quadrant&gt;
+  &lt;quadrant label=&quot;Do first&quot; tone=&quot;error&quot;&gt;&lt;text&gt;Important and urgent.&lt;/text&gt;&lt;/quadrant&gt;
+  &lt;quadrant label=&quot;Drop&quot; tone=&quot;neutral&quot;&gt;&lt;text&gt;Neither.&lt;/text&gt;&lt;/quadrant&gt;
+  &lt;quadrant label=&quot;Delegate&quot; tone=&quot;warning&quot;&gt;&lt;text&gt;Urgent, not important.&lt;/text&gt;&lt;/quadrant&gt;
+&lt;/matrix&gt;
+</code></pre>
+<h3>Compare slider</h3>
+<p>Two things under a draggable divider. Best with two pictures, like before and after. It remembers the divider position.</p>
+<pre><code class="language-xml">&lt;compare id=&quot;compare-1&quot; title=&quot;Before and after&quot;&gt;
+  &lt;side label=&quot;Before&quot;&gt;&lt;text&gt;The first version.&lt;/text&gt;&lt;/side&gt;
+  &lt;side label=&quot;After&quot;&gt;&lt;text&gt;The improved version.&lt;/text&gt;&lt;/side&gt;
+&lt;/compare&gt;
+</code></pre>
+<h3>Kanban board</h3>
+<p>Lanes of cards, like To do, Doing and Done. Up to six lanes. Drag a card to another lane or place, or select it and press Alt with an arrow key.</p>
+<pre><code class="language-xml">&lt;kanban id=&quot;kanban-1&quot; title=&quot;This week&quot;&gt;
+  &lt;lane label=&quot;To do&quot;&gt;&lt;item title=&quot;Read chapter 4&quot; tag=&quot;Reading&quot; /&gt;&lt;/lane&gt;
+  &lt;lane label=&quot;Doing&quot; tone=&quot;info&quot;&gt;&lt;item title=&quot;Problem set&quot; tag=&quot;Math&quot; /&gt;&lt;/lane&gt;
+  &lt;lane label=&quot;Done&quot; tone=&quot;success&quot;&gt;&lt;item title=&quot;Lab report&quot; /&gt;&lt;/lane&gt;
+&lt;/kanban&gt;
+</code></pre>
+<h2>Numbers, charts and models</h2>
+<p>Blocks where you change a number and watch the result change.</p>
+<h3>Stat tiles</h3>
+<p>Big numbers with an arrow for up, down or flat. Put them in a grid.</p>
+<pre><code class="language-xml">&lt;grid columns=&quot;2&quot;&gt;
+  &lt;stat label=&quot;Measure&quot; value=&quot;High&quot; trend=&quot;up&quot; tone=&quot;warning&quot; /&gt;
+  &lt;stat label=&quot;Another measure&quot; value=&quot;Low&quot; trend=&quot;down&quot; tone=&quot;info&quot; /&gt;
+&lt;/grid&gt;
+</code></pre>
+<h3>Chart</h3>
+<p>A line, bar, area, donut or radial chart. <code>type</code> picks the kind. <code>points</code> is the data. You can edit the data as a table in the visual editor.</p>
+<pre><code class="language-xml">&lt;chart id=&quot;chart-1&quot; title=&quot;Learning progress&quot; description=&quot;Minutes studied and practice score&quot; type=&quot;area&quot; points=&#x27;[{&quot;name&quot;:&quot;Mon&quot;,&quot;minutes&quot;:20,&quot;score&quot;:40},{&quot;name&quot;:&quot;Tue&quot;,&quot;minutes&quot;:45,&quot;score&quot;:55},{&quot;name&quot;:&quot;Wed&quot;,&quot;minutes&quot;:30,&quot;score&quot;:62},{&quot;name&quot;:&quot;Thu&quot;,&quot;minutes&quot;:60,&quot;score&quot;:78}]&#x27; /&gt;
+</code></pre>
+<h3>Scatter plot</h3>
+<p>Dots on two axes. <code>trendline=&quot;true&quot;</code> draws the best-fit line and shows R².</p>
+<pre><code class="language-xml">&lt;scatter id=&quot;scatter-1&quot; title=&quot;Study hours and score&quot; xlabel=&quot;Hours studied&quot; ylabel=&quot;Score (%)&quot; trendline=&quot;true&quot; points=&#x27;[{&quot;x&quot;:1,&quot;y&quot;:52},{&quot;x&quot;:2,&quot;y&quot;:58},{&quot;x&quot;:3,&quot;y&quot;:67},{&quot;x&quot;:4,&quot;y&quot;:71},{&quot;x&quot;:5,&quot;y&quot;:80}]&#x27; /&gt;
+</code></pre>
+<h3>Heatmap</h3>
+<p>A table of numbers shaded by size. <code>rows</code> and <code>cols</code> are the labels, <code>values</code> has one list of numbers per row.</p>
+<pre><code class="language-xml">&lt;heatmap id=&quot;heatmap-1&quot; title=&quot;Focus by time of day&quot; rows=&#x27;[&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed&quot;]&#x27; cols=&#x27;[&quot;Morning&quot;,&quot;Afternoon&quot;,&quot;Evening&quot;]&#x27; values=&#x27;[[7,5,3],[8,6,4],[6,4,2]]&#x27; /&gt;
+</code></pre>
+<h3>Radar chart</h3>
+<p>Compares several measures at once on a web. Each <code>series</code> is one shape. 3 to 12 axes.</p>
+<pre><code class="language-xml">&lt;radar id=&quot;radar-1&quot; title=&quot;Skills&quot; max=&quot;10&quot; axes=&#x27;[&quot;Reading&quot;,&quot;Writing&quot;,&quot;Math&quot;,&quot;Memory&quot;,&quot;Focus&quot;]&#x27; series=&#x27;[{&quot;label&quot;:&quot;Now&quot;,&quot;values&quot;:[6,5,8,7,4]},{&quot;label&quot;:&quot;Goal&quot;,&quot;values&quot;:[8,8,9,8,8]}]&#x27; /&gt;
+</code></pre>
+<h3>Funnel</h3>
+<p>Stages that get smaller, widest first. Each stage shows what share is left from the one before.</p>
+<pre><code class="language-xml">&lt;funnel id=&quot;funnel-1&quot; title=&quot;From idea to finished&quot;&gt;
+  &lt;stage label=&quot;Ideas&quot; value=&quot;100&quot; /&gt;
+  &lt;stage label=&quot;Drafted&quot; value=&quot;60&quot; /&gt;
+  &lt;stage label=&quot;Finished&quot; value=&quot;25&quot; /&gt;
+&lt;/funnel&gt;
+</code></pre>
+<h3>Histogram</h3>
+<p>Counts how many numbers fall in each range. <code>bins</code> is the number of bars (2 to 40).</p>
+<pre><code class="language-xml">&lt;histogram id=&quot;histogram-1&quot; title=&quot;Quiz scores&quot; xlabel=&quot;Score&quot; bins=&quot;6&quot; data=&#x27;[55,62,64,68,70,71,73,75,75,78,80,82,85,91,95]&#x27; /&gt;
+</code></pre>
+<h3>Box plot</h3>
+<p>Median, quartiles, whiskers and outliers for each group. Each group needs at least two numbers.</p>
+<pre><code class="language-xml">&lt;boxplot id=&quot;boxplot-1&quot; title=&quot;Scores by class&quot; ylabel=&quot;Score&quot; groups=&#x27;[{&quot;label&quot;:&quot;Class A&quot;,&quot;values&quot;:[55,62,68,70,75,78,82,90]},{&quot;label&quot;:&quot;Class B&quot;,&quot;values&quot;:[60,64,66,70,72,74,76,99]}]&#x27; /&gt;
+</code></pre>
+<h3>Flow diagram (Sankey)</h3>
+<p>Bands that show where an amount comes from and where it goes. Good for a budget.</p>
+<pre><code class="language-xml">&lt;sankey id=&quot;sankey-1&quot; title=&quot;Monthly budget&quot; unit=&quot;$&quot;&gt;
+  &lt;flow from=&quot;Income&quot; to=&quot;Rent&quot; value=&quot;900&quot; /&gt;
+  &lt;flow from=&quot;Income&quot; to=&quot;Food&quot; value=&quot;400&quot; /&gt;
+  &lt;flow from=&quot;Income&quot; to=&quot;Savings&quot; value=&quot;300&quot; /&gt;
+&lt;/sankey&gt;
+</code></pre>
+<h3>Number line</h3>
+<p>Points and ranges on a line. <code>open=&quot;true&quot;</code> draws a hollow dot for a value that is not included.</p>
+<pre><code class="language-xml">&lt;numberline id=&quot;numberline-1&quot; title=&quot;Solutions&quot; min=&quot;-5&quot; max=&quot;5&quot;&gt;
+  &lt;range from=&quot;-2&quot; to=&quot;3&quot; label=&quot;x between -2 and 3&quot; tone=&quot;info&quot; /&gt;
+  &lt;point at=&quot;4&quot; label=&quot;x = 4&quot; open=&quot;true&quot; /&gt;
+&lt;/numberline&gt;
+</code></pre>
+<h3>Interactive slider</h3>
+<p>A slider you drag. Write <code>{value}</code> in <code>explanation</code> to show the current value in the sentence.</p>
+<pre><code class="language-xml">&lt;slider id=&quot;slider-1&quot; label=&quot;Explore a value&quot; min=&quot;0&quot; max=&quot;100&quot; step=&quot;1&quot; value=&quot;50&quot; unit=&quot;%&quot; explanation=&quot;The current value is {value}.&quot; /&gt;
+</code></pre>
+<h3>Formula model</h3>
+<p>Sliders go in, a calculated number comes out. <code>formula</code> uses the variable names. <code>band</code> colors the output by size.</p>
+<pre><code class="language-xml">&lt;model id=&quot;model-1&quot; title=&quot;Explore a model&quot; note=&quot;A teaching model.&quot;&gt;
+  &lt;variable name=&quot;x&quot; label=&quot;Input&quot; min=&quot;0&quot; max=&quot;100&quot; step=&quot;1&quot; value=&quot;40&quot; /&gt;
+  &lt;output name=&quot;y&quot; label=&quot;Output&quot; formula=&quot;x * 2&quot; max=&quot;200&quot;&gt;
+    &lt;band below=&quot;80&quot; label=&quot;Low&quot; tone=&quot;info&quot; /&gt;
+    &lt;band label=&quot;High&quot; tone=&quot;warning&quot; /&gt;
+  &lt;/output&gt;
+  &lt;text&gt;When the input is {x}, the output is {y}.&lt;/text&gt;
+&lt;/model&gt;
+</code></pre>
+<h3>Calculation</h3>
+<p>Type numbers in and get a result. It is a formula model with two inputs and one output. Change the formula to whatever you need.</p>
+<pre><code class="language-xml">&lt;model id=&quot;calc-1&quot; title=&quot;Calculation&quot; note=&quot;Change the numbers to recalculate.&quot;&gt;
+  &lt;variable name=&quot;a&quot; label=&quot;First number&quot; min=&quot;0&quot; max=&quot;100&quot; step=&quot;1&quot; value=&quot;12&quot; /&gt;
+  &lt;variable name=&quot;b&quot; label=&quot;Second number&quot; min=&quot;0&quot; max=&quot;100&quot; step=&quot;1&quot; value=&quot;8&quot; /&gt;
+  &lt;output name=&quot;total&quot; label=&quot;Total&quot; formula=&quot;a + b&quot; max=&quot;200&quot; /&gt;
+  &lt;text&gt;{a} + {b} = {total}&lt;/text&gt;
+&lt;/model&gt;
+</code></pre>
+<h3>Scenario simulator</h3>
+<p>Buttons switch between states, like Normal and High. Each state shows its own meters.</p>
+<pre><code class="language-xml">&lt;simulator id=&quot;sim-1&quot; title=&quot;Compare scenarios&quot; note=&quot;Illustrative values.&quot;&gt;
+  &lt;scenario label=&quot;Normal&quot; tone=&quot;success&quot; description=&quot;Explain this state.&quot;&gt;
+    &lt;metric label=&quot;Level&quot; value=&quot;50&quot; max=&quot;100&quot; status=&quot;Normal&quot; tone=&quot;success&quot; /&gt;
+  &lt;/scenario&gt;
+  &lt;scenario label=&quot;High&quot; tone=&quot;warning&quot; description=&quot;Explain this state.&quot;&gt;
+    &lt;metric label=&quot;Level&quot; value=&quot;85&quot; max=&quot;100&quot; status=&quot;High&quot; tone=&quot;warning&quot; /&gt;
+  &lt;/scenario&gt;
+&lt;/simulator&gt;
+</code></pre>
+<h3>Pros and cons</h3>
+<p>Weigh a choice. Each point can have a <code>weight</code> from 1 to 10. Lumen adds up both sides and shows which way it leans.</p>
+<pre><code class="language-xml">&lt;proscons id=&quot;proscons-1&quot; title=&quot;Study at the library?&quot; verdict=&quot;Worth it on exam weeks.&quot;&gt;
+  &lt;pro weight=&quot;3&quot;&gt;Quiet and focused.&lt;/pro&gt;
+  &lt;pro&gt;Group rooms.&lt;/pro&gt;
+  &lt;con weight=&quot;2&quot;&gt;A commute.&lt;/con&gt;
+&lt;/proscons&gt;
+</code></pre>
+<h2>Time, school and planning</h2>
+<h3>Calendar</h3>
+<p>One to sixteen weeks starting at <code>start</code>. Each <code>event</code> has a <code>date</code> (and <code>end</code> for a span).</p>
+<pre><code class="language-xml">&lt;calendar id=&quot;calendar-1&quot; title=&quot;Exam month&quot; start=&quot;2026-10-26&quot; weeks=&quot;4&quot;&gt;
+  &lt;event date=&quot;2026-11-02&quot; title=&quot;Quiz&quot; tone=&quot;warning&quot; /&gt;
+  &lt;event date=&quot;2026-11-17&quot; end=&quot;2026-11-19&quot; title=&quot;Midterms&quot; tone=&quot;error&quot; /&gt;
+&lt;/calendar&gt;
+</code></pre>
+<h3>Gantt chart</h3>
+<p>Tasks as bars along a schedule. <code>progress</code> is 0 to 100. Dates are YYYY-MM-DD, and the end day is included.</p>
+<pre><code class="language-xml">&lt;gantt id=&quot;gantt-1&quot; title=&quot;Project plan&quot;&gt;
+  &lt;task label=&quot;Research&quot; start=&quot;2026-10-26&quot; end=&quot;2026-11-06&quot; progress=&quot;100&quot; tone=&quot;success&quot; /&gt;
+  &lt;task label=&quot;Write&quot; start=&quot;2026-11-02&quot; end=&quot;2026-11-20&quot; progress=&quot;40&quot; tone=&quot;info&quot; /&gt;
+  &lt;task label=&quot;Review&quot; start=&quot;2026-11-16&quot; end=&quot;2026-11-27&quot; tone=&quot;warning&quot; /&gt;
+&lt;/gantt&gt;
+</code></pre>
+<h3>Countdown</h3>
+<p>Days left until a date, counted from today. It shows days since once the date passes.</p>
+<pre><code class="language-xml">&lt;countdown id=&quot;countdown-1&quot; title=&quot;Biology final&quot; date=&quot;2026-11-27&quot; /&gt;
+</code></pre>
+<h3>Habit tracker</h3>
+<p>A grid of days with a row for each habit. Click a square to tick it. With <code>start</code>, ticks are saved by date and the streak counts up to today.</p>
+<pre><code class="language-xml">&lt;tracker id=&quot;tracker-1&quot; title=&quot;This fortnight&quot; habits=&#x27;[&quot;Read&quot;,&quot;Exercise&quot;,&quot;Flashcards&quot;]&#x27; days=&quot;14&quot; start=&quot;2026-10-26&quot; /&gt;
+</code></pre>
+<h3>Semester grades</h3>
+<p>Each class with its marks. Lumen works out the percent, the letter and the semester GPA. Leave <code>earned</code> out for work that is not graded yet. Add <code>target</code> to see the average you need on what is left.</p>
+<pre><code class="language-xml">&lt;gradebook id=&quot;gradebook-1&quot; title=&quot;Grades&quot; semester=&quot;Fall 2026&quot;&gt;
+  &lt;course name=&quot;Biology&quot; credits=&quot;4&quot; target=&quot;90&quot;&gt;
+    &lt;mark name=&quot;Quiz 1&quot; earned=&quot;18&quot; max=&quot;20&quot; weight=&quot;10&quot; /&gt;
+    &lt;mark name=&quot;Midterm&quot; earned=&quot;84&quot; max=&quot;100&quot; weight=&quot;30&quot; /&gt;
+    &lt;mark name=&quot;Final exam&quot; max=&quot;100&quot; weight=&quot;40&quot; /&gt;
+  &lt;/course&gt;
+  &lt;course name=&quot;English&quot; credits=&quot;3&quot;&gt;
+    &lt;mark name=&quot;Essay 1&quot; earned=&quot;46&quot; max=&quot;50&quot; /&gt;
+  &lt;/course&gt;
+&lt;/gradebook&gt;
+</code></pre>
+<h3>Procedure</h3>
+<p>Materials and steps you tick off. A step with <code>minutes</code> gets a start and pause timer.</p>
+<pre><code class="language-xml">&lt;procedure id=&quot;procedure-1&quot; title=&quot;Gel electrophoresis&quot; time=&quot;60 minutes&quot;&gt;
+  &lt;need&gt;Agarose gel&lt;/need&gt;
+  &lt;need&gt;Buffer&lt;/need&gt;
+  &lt;do minutes=&quot;5&quot;&gt;Load the samples.&lt;/do&gt;
+  &lt;do minutes=&quot;30&quot;&gt;Run the gel.&lt;/do&gt;
+  &lt;do&gt;Photograph the result.&lt;/do&gt;
+&lt;/procedure&gt;
+</code></pre>
+<h3>Reference</h3>
+<p>A source card with a <strong>Copy citation</strong> button. Only <code>title</code> is required.</p>
+<pre><code class="language-xml">&lt;reference id=&quot;reference-1&quot; title=&quot;Molecular Biology of the Cell&quot; author=&quot;Alberts, B.&quot; year=&quot;2014&quot; source=&quot;Garland Science&quot; note=&quot;Chapter 14 covers mitochondria.&quot; /&gt;
+</code></pre>
+<h3>Canvas assignments</h3>
+<p>What is coming up on Canvas, with a <strong>Sync</strong> button. Connect Canvas first in Settings › Sync &amp; backup › Canvas.</p>
+<pre><code class="language-xml">&lt;assignments title=&quot;Coming up on Canvas&quot; days=&quot;14&quot; /&gt;
+</code></pre>
+<h2>Computer architecture</h2>
+<p>Built for ARMv7 and CPU courses. The code inside is plain text, one instruction per line.</p>
+<h3>Pipeline</h3>
+<p>ARM code, one instruction per line, played cycle by cycle in a grid. It shows stalls and flushes. Switch the view to Stages, Hazards or Practice. Forwarding and branch prediction can be turned on or off.</p>
+<pre><code class="language-xml">&lt;pipeline id=&quot;pipeline-1&quot; title=&quot;Load-use hazard&quot;&gt;
+LDR r1, [r0]
+ADD r2, r1, r3
+EOR r4, r5, r6
+&lt;/pipeline&gt;
+</code></pre>
+<h3>Speedup (Amdahl)</h3>
+<p>Amdahl&#x27;s law with sliders: how much faster does the program get if you add cores? <code>parallel</code> is the percent that can run in parallel.</p>
+<pre><code class="language-xml">&lt;speedup id=&quot;speedup-1&quot; title=&quot;How much do more cores help?&quot; time=&quot;100&quot; parallel=&quot;80&quot; cores=&quot;4&quot; /&gt;
+</code></pre>
+<h3>Cores and threads</h3>
+<p>Cores that share memory, one step at a time. Each <code>op</code> is one step on one core, so you can see how two cores both read 0 and both write 1.</p>
+<pre><code class="language-xml">&lt;cores id=&quot;cores-1&quot; title=&quot;Two cores, one counter&quot; memory=&quot;count=0&quot;&gt;
+  &lt;core name=&quot;c0&quot; label=&quot;Core 0&quot; /&gt;
+  &lt;core name=&quot;c1&quot; label=&quot;Core 1&quot; /&gt;
+  &lt;op core=&quot;c0&quot; do=&quot;LDR r0, [count]&quot; show=&quot;r0 = 0&quot; /&gt;
+  &lt;op core=&quot;c1&quot; do=&quot;LDR r0, [count]&quot; show=&quot;r0 = 0&quot; same=&quot;true&quot; /&gt;
+  &lt;op core=&quot;c0&quot; do=&quot;STR r0, [count]&quot; set=&quot;count=1&quot; /&gt;
+  &lt;op core=&quot;c1&quot; do=&quot;STR r0, [count]&quot; set=&quot;count=1&quot; /&gt;
+&lt;/cores&gt;
+</code></pre>
+<h3>Cycle budget</h3>
+<p>Add up cycles. Each <code>kind</code> is a type of instruction with its cost and how many per iteration. Lumen shows CPI and CPU time. Each <code>case</code> is a what-if with a different clock or counts.</p>
+<pre><code class="language-xml">&lt;cycles id=&quot;cycles-1&quot; title=&quot;CPU time&quot; iterations=&quot;1000&quot; clock=&quot;2&quot;&gt;
+  &lt;kind name=&quot;ALU&quot; cost=&quot;1&quot; count=&quot;4&quot; /&gt;
+  &lt;kind name=&quot;Load&quot; cost=&quot;4&quot; count=&quot;2&quot; /&gt;
+  &lt;kind name=&quot;Branch&quot; cost=&quot;2&quot; count=&quot;1&quot; /&gt;
+  &lt;case label=&quot;Baseline&quot; /&gt;
+  &lt;case label=&quot;Faster clock&quot; clock=&quot;2.5&quot; /&gt;
+&lt;/cycles&gt;
+</code></pre>
+<h2>Health, science and picture practice</h2>
+<h3>Picture to learn</h3>
+<p>Hide parts of a picture and test yourself, like image-occlusion flash cards. Choose a picture (Lumen keeps the original, nothing is shrunk), drag on it to draw a box over each label or structure, and type what is under each box. Press <strong>Try it</strong> to study: press a box to reveal it, or switch to <strong>One at a time</strong>. A web page export shows the boxes closed with an answer key under the picture.</p>
+<pre><code class="language-xml">&lt;occlude id=&quot;occlude-1&quot; title=&quot;Label the heart&quot;&gt;
+  &lt;mask x=&quot;42&quot; y=&quot;8&quot; w=&quot;18&quot; h=&quot;9&quot; label=&quot;Aorta&quot; /&gt;
+  &lt;mask x=&quot;20&quot; y=&quot;52&quot; w=&quot;22&quot; h=&quot;10&quot; label=&quot;Right ventricle&quot; /&gt;
+&lt;/occlude&gt;
+</code></pre>
+<h3>Dose calculation</h3>
+<p>A worked formula with units: drug doses, drip rates, conversions, molarity. Each <code>given</code> is a number you can change. Each <code>work</code> line is a step whose name later lines can use. <strong>Calculate</strong> shows every line with the numbers put in. <strong>Practice</strong> makes up new numbers and checks your answer to the decimals shown. <code>safe</code> flags an answer outside the usual range.</p>
+<pre><code class="language-xml">&lt;dose id=&quot;dose-1&quot; title=&quot;Dose by weight&quot; formula=&quot;kg * dose / strength&quot; result=&quot;Volume&quot; unit=&quot;mL&quot; digits=&quot;2&quot; safe=&quot;0.5 - 5&quot;&gt;
+  &lt;given name=&quot;lb&quot; label=&quot;Weight&quot; value=&quot;154&quot; min=&quot;22&quot; max=&quot;330&quot; unit=&quot;lb&quot; /&gt;
+  &lt;given name=&quot;dose&quot; label=&quot;Ordered dose&quot; value=&quot;0.5&quot; min=&quot;0.1&quot; max=&quot;2&quot; step=&quot;0.1&quot; unit=&quot;mg/kg&quot; /&gt;
+  &lt;given name=&quot;strength&quot; label=&quot;Strength&quot; value=&quot;10&quot; min=&quot;1&quot; max=&quot;50&quot; unit=&quot;mg/mL&quot; /&gt;
+  &lt;work name=&quot;kg&quot; label=&quot;Weight in kg&quot; formula=&quot;lb / 2.2&quot; unit=&quot;kg&quot; /&gt;
+&lt;/dose&gt;
+</code></pre>
+<h3>Lab values</h3>
+<p>Normal ranges with a box for a patient&#x27;s value, flagged low, normal, high or critical. Rows with <code>alt</code> and <code>factor</code> switch between conventional and SI units. <strong>Hide ranges</strong> turns the table into a memory drill.</p>
+<pre><code class="language-xml">&lt;labs id=&quot;labs-1&quot; title=&quot;Lab values&quot;&gt;
+  &lt;lab name=&quot;Potassium&quot; low=&quot;3.5&quot; high=&quot;5.0&quot; critical-low=&quot;2.5&quot; critical-high=&quot;6.5&quot; unit=&quot;mmol/L&quot; group=&quot;Electrolytes&quot; /&gt;
+  &lt;lab name=&quot;Glucose (fasting)&quot; low=&quot;70&quot; high=&quot;99&quot; unit=&quot;mg/dL&quot; alt=&quot;mmol/L&quot; factor=&quot;0.0555&quot; group=&quot;Metabolic&quot; /&gt;
+&lt;/labs&gt;
+</code></pre>
+<h2>Math, biology, economics and languages</h2>
+<h3>Function graph</h3>
+<p>A graph with a slider for each number in the formula, so you can see what each one does to the shape. Write the formula with <code>x</code> and the slider names. A <code>dot</code> marks a point, and its position can be a formula of the sliders too (the vertex of a parabola, for example). The line under the graph shows the formula with the current numbers put in.</p>
+<pre><code class="language-xml">&lt;plot id=&quot;plot-1&quot; title=&quot;A parabola&quot; xmin=&quot;-6&quot; xmax=&quot;6&quot;&gt;
+  &lt;param name=&quot;a&quot; label=&quot;a&quot; value=&quot;1&quot; min=&quot;-3&quot; max=&quot;3&quot; step=&quot;0.5&quot; /&gt;
+  &lt;param name=&quot;b&quot; label=&quot;b&quot; value=&quot;0&quot; min=&quot;-6&quot; max=&quot;6&quot; step=&quot;0.5&quot; /&gt;
+  &lt;param name=&quot;c&quot; label=&quot;c&quot; value=&quot;-2&quot; min=&quot;-6&quot; max=&quot;6&quot; step=&quot;0.5&quot; /&gt;
+  &lt;fn formula=&quot;a * x^2 + b * x + c&quot; label=&quot;Parabola&quot; /&gt;
+  &lt;dot x=&quot;-b / (2 * a)&quot; y=&quot;c - b^2 / (4 * a)&quot; label=&quot;Vertex&quot; /&gt;
+&lt;/plot&gt;
+</code></pre>
+<h3>Punnett square</h3>
+<p>The square for a cross of one gene (<code>Tt</code>) or two (<code>TtRr</code>), with the genotype and phenotype ratios. <strong>Practice</strong> blanks the boxes: type each child&#x27;s genotype and press <strong>Check</strong>. <code>Tt</code> and <code>tT</code> both count.</p>
+<pre><code class="language-xml">&lt;punnett id=&quot;punnett-1&quot; title=&quot;Pea plants&quot; parent1=&quot;Tt&quot; parent2=&quot;Tt&quot; label1=&quot;Mother&quot; label2=&quot;Father&quot;&gt;
+  &lt;gene letter=&quot;T&quot; dominant=&quot;Tall&quot; recessive=&quot;Short&quot; /&gt;
+&lt;/punnett&gt;
+</code></pre>
+<h3>Supply and demand</h3>
+<p>Two straight lines and the point where they cross. Each <code>shift</code> is a button: pick one and the chosen curve slides along the quantity axis, the old line stays faded, and a table shows price and quantity before and after. Price is <code>intercept</code> + <code>slope</code> × quantity, so demand has a negative slope and supply a positive one.</p>
+<pre><code class="language-xml">&lt;curves id=&quot;curves-1&quot; title=&quot;Coffee&quot; xlabel=&quot;Cups per day&quot; ylabel=&quot;Price ($)&quot;&gt;
+  &lt;curve name=&quot;Demand&quot; kind=&quot;demand&quot; intercept=&quot;10&quot; slope=&quot;-0.1&quot; /&gt;
+  &lt;curve name=&quot;Supply&quot; kind=&quot;supply&quot; intercept=&quot;2&quot; slope=&quot;0.06&quot; /&gt;
+  &lt;shift curve=&quot;Demand&quot; by=&quot;15&quot; label=&quot;Incomes rise&quot; /&gt;
+  &lt;shift curve=&quot;Supply&quot; by=&quot;20&quot; label=&quot;Beans get cheaper&quot; /&gt;
+&lt;/curves&gt;
+</code></pre>
+<h3>Verb table</h3>
+<p>A verb&#x27;s forms by tense, with the ending picked out. The speaker beside a form reads it aloud (set <code>lang</code> to the language code, like <code>es-ES</code>). <strong>Practice</strong> hides the forms: type each one and press <strong>Check</strong>. A missed accent is marked separately from a wrong word.</p>
+<pre><code class="language-xml">&lt;conjugate id=&quot;verb-1&quot; verb=&quot;hablar&quot; meaning=&quot;to speak&quot; lang=&quot;es-ES&quot;&gt;
+  &lt;tense name=&quot;Present&quot;&gt;
+    &lt;form who=&quot;yo&quot; text=&quot;hablo&quot; /&gt;
+    &lt;form who=&quot;tú&quot; text=&quot;hablas&quot; /&gt;
+    &lt;form who=&quot;él / ella&quot; text=&quot;habla&quot; /&gt;
+  &lt;/tense&gt;
+&lt;/conjugate&gt;
+</code></pre>
+<h2>Nursing, law, chemistry and psychology</h2>
+<h3>Drug card</h3>
+<p>A drug&#x27;s class, how it works, what it is used for, side effects and nursing points on one card. Write each list in one attribute with a semicolon between items. <strong>Flashcard</strong> shows only the name and class until you turn the card over.</p>
+<pre><code class="language-xml">&lt;drugcard id=&quot;drug-1&quot; name=&quot;Furosemide&quot; brand=&quot;Lasix&quot; class=&quot;Loop diuretic&quot;
+  action=&quot;Blocks sodium and chloride reabsorption in the loop of Henle.&quot;
+  uses=&quot;Heart failure; Edema&quot;
+  effects=&quot;Low potassium; Dehydration&quot;
+  nursing=&quot;Weigh daily; Check potassium&quot;
+  warning=&quot;Low potassium can cause heart rhythm problems.&quot; /&gt;
+</code></pre>
+<h3>Case brief</h3>
+<p>A court case as facts, issue, rule, application and conclusion. <strong>Practice</strong> asks you to write each part in your own words first, then shows the model answer to compare with. You mark yourself; Lumen does not grade writing.</p>
+<pre><code class="language-xml">&lt;brief id=&quot;brief-1&quot; case=&quot;Donoghue v Stevenson&quot; citation=&quot;[1932] AC 562&quot; court=&quot;House of Lords&quot;&gt;
+  &lt;facts&gt;A woman found a snail in a bottle of ginger beer and became ill.&lt;/facts&gt;
+  &lt;issue&gt;Does a manufacturer owe a duty of care to the final consumer?&lt;/issue&gt;
+  &lt;rule&gt;Take reasonable care to avoid harm you can reasonably foresee to your neighbour.&lt;/rule&gt;
+  &lt;application&gt;The drink was sealed, so nobody could check it before it reached the consumer.&lt;/application&gt;
+  &lt;conclusion&gt;Yes. The manufacturer owed a duty of care.&lt;/conclusion&gt;
+&lt;/brief&gt;
+</code></pre>
+<h3>Balance an equation</h3>
+<p>Write the balanced equation as the answer. In <strong>Practice</strong> every number starts at 1: use − and + until the atom table matches on both sides. Lumen says when it is balanced, and whether the numbers are in their smallest whole form.</p>
+<pre><code class="language-xml">&lt;equation id=&quot;equation-1&quot; title=&quot;Burning methane&quot; equation=&quot;CH4 + 2 O2 -&gt; CO2 + 2 H2O&quot; view=&quot;practice&quot; /&gt;
+</code></pre>
+<h3>Memory test</h3>
+<p>Words appear one at a time, then you type the ones you remember. Run it a few times and a chart shows how often each position in the list was remembered: the first words and last words win over the middle (the serial-position effect). Set <code>delay</code> to add a counting-back pause, which removes most of the last-words advantage.</p>
+<pre><code class="language-xml">&lt;recall id=&quot;recall-1&quot; title=&quot;Serial position&quot; words=&quot;apple, river, chair, cloud, pencil, garden, window, candle, bridge, ocean&quot; seconds=&quot;2&quot; delay=&quot;10&quot; /&gt;
+</code></pre>
+<h3>Picture layers</h3>
+<p>One subject as several pictures lying over each other, such as bones, muscles and nerves. Choose a picture for each layer while editing, then switch the layers on and off. Use see-through PNGs for the upper layers, or <strong>One at a time</strong> for ordinary pictures. Lumen keeps each original file.</p>
+<pre><code class="language-xml">&lt;layers id=&quot;layers-1&quot; title=&quot;The forearm&quot;&gt;
+  &lt;layer name=&quot;Bones&quot; image=&quot;layers-1&quot; /&gt;
+  &lt;layer name=&quot;Muscles&quot; image=&quot;layers-2&quot; /&gt;
+&lt;/layers&gt;
+</code></pre>
+<h2>Pictures, files and media</h2>
+<p>These open a picker or a dialog instead of adding text. Their files are kept with the note or in Lumen&#x27;s file store.</p>
+<h3>Picture</h3>
+<p>Pick a photo or screenshot. Add a caption, set the size and alignment, or put several pictures in one block. Pictures are kept as the original file, with nothing resized or re-encoded.</p>
+<h3>Drawing</h3>
+<p>Add a drawing from Skybridge Board (the drawing app on your iPad) or from a picture file.</p>
+<h3>3D model</h3>
+<p>Pick an STL, OBJ or GLB file. Drag to spin it, use the wheel to zoom, right-drag to pan. Large models are kept as files on your PC instead of inside the note.</p>
+<h3>3D settings</h3>
+<p>Sets the lighting, the HDRI background and the look for every 3D model on the page. One model can have its own setting.</p>
+<h3>Voice note</h3>
+<p>Record audio from your microphone and play it back inside the note.</p>
+<h3>PDF</h3>
+<p>Read a PDF inside the note and pin notes to its pages.</p>
+<h3>Video</h3>
+<p>Add a video file or a YouTube link. You can attach notes to moments in the video.</p>
+<h3>Folder</h3>
+<p>A folder path on your PC with an <strong>Open folder</strong> button.</p>
+<pre><code class="language-xml">&lt;folder path=&quot;&quot; /&gt;
+</code></pre>
+<h3>Code block</h3>
+<p>Colored code in the language you pick, with <strong>Copy</strong> and <strong>Run</strong>. ARMv7 code can run in a small simulator.</p>
+<pre><code class="language-markdown">```python
+# Write your code here
+for n in range(3):
+    print(&quot;Hello&quot;, n)
+```
+</code></pre>
+</section>
+<section id="review">
+<h1>Flashcards and review</h1>
+<p>Lumen turns the flashcards and questions in your notes into a daily review. It decides when each card comes back using FSRS-6, the same method Anki uses. It works offline and needs no AI.</p>
+<h2>Which blocks become cards</h2>
+<table><thead><tr><th>Block</th><th>Front of the card</th><th>Back of the card</th></tr></thead><tbody><tr><td><strong>Flashcard</strong></td><td>its <code>front</code></td><td>its <code>back</code></td></tr><tr><td><strong>Practice question</strong></td><td>its <code>question</code></td><td>its <code>answer</code></td></tr><tr><td><strong>Multiple choice</strong></td><td>the question and options</td><td>the right option and the explanation</td></tr></tbody></table>
+<p>Flashcards and practice questions are always cards. A multiple choice question becomes a card after you get it wrong, in the note or while studying. You can turn this off in <strong>Review › Settings › Review questions I get wrong</strong>.</p>
+<p>A card&#x27;s topic is the heading above it, or its quiz&#x27;s <code>title</code>.</p>
+<h2>Make a flashcard from text you selected</h2>
+<ol>
+<li>Select text in a note.</li>
+<li>Choose <strong>Make flashcard</strong>.</li>
+<li>A draft opens with your selection as the back. Lumen fills in the front when the text already looks like a term and its meaning, like <code>Term: meaning</code>, <code>X is …</code> or a short first line above more text. Otherwise you write the front.</li>
+<li>Save it. The card is added below the block you selected from.</li>
+</ol>
+<h2>Do a review</h2>
+<ol>
+<li>Click <strong>Review</strong> in the sidebar. A number beside it is how many cards are due.</li>
+<li>The page shows cards due today, new cards for today, reviews done today, your streak and a 14-day forecast.</li>
+<li>Start a session. Think of the answer, then press <strong>Show answer</strong> (<strong>Space</strong>).</li>
+<li>Grade yourself:</li>
+</ol>
+<table><thead><tr><th>Grade</th><th>Key</th><th>Use it when</th><th>What happens</th></tr></thead><tbody><tr><td><strong>Again</strong></td><td>1</td><td>You did not remember.</td><td>Comes back in about 1 minute.</td></tr><tr><td><strong>Hard</strong></td><td>2</td><td>You remembered with effort.</td><td>Comes back sooner than Good.</td></tr><tr><td><strong>Good</strong></td><td>3</td><td>You remembered.</td><td>Comes back later, in days after the first few times.</td></tr><tr><td><strong>Easy</strong></td><td>4</td><td>It was effortless.</td><td>Comes back much later.</td></tr></tbody></table>
+<p>Each grade button shows when it would bring the card back. A multiple choice question you answer wrong is graded Again for you.</p>
+<p>At the end Lumen counts your grades and offers <strong>Retry the ones you missed</strong>.</p>
+<h2>Choose what to study</h2>
+<ul>
+<li><strong>Review</strong> studies today&#x27;s due cards, for everything, a folder, a tag or one note.</li>
+<li><strong>Practice all</strong> goes through every card in that group, in random order.</li>
+<li><strong>Study this note</strong> in a note&#x27;s toolbar practices only that note, and returns you to it when you finish.</li>
+</ul>
+<p>New cards per day is 20 by default. Change it in Review › Settings (0 to 200).</p>
+<h2>Hints</h2>
+<p>Any card can have a <code>hint</code>, a nudge that does not give the answer away. It stays hidden until you press <strong>Show hint</strong> (<strong>H</strong>). Write one in the block&#x27;s <strong>Hint</strong> field. If you saved a Gemini key (Settings › Smart features), a card without a hint shows <strong>Suggest a hint</strong>, and Gemini writes one and saves it on the card. Each suggestion uses one of your day&#x27;s Gemini requests.</p>
+<h2>Where your progress is kept</h2>
+<p>Review history is saved inside the note the card is in. Backups and exports of your workspace include it. Deleting a note deletes its review history. A card is remembered by its <code>id</code>, so you can reword it without losing its schedule.</p>
+</section>
+<section id="quizzes">
+<h1>Quizzes and practice</h1>
+<h2>Quick questions inside a note</h2>
+<table><thead><tr><th>Block</th><th>Good for</th></tr></thead><tbody><tr><td><strong>Practice question</strong></td><td>A question where you think of the answer first, then reveal it.</td></tr><tr><td><strong>Multiple choice</strong></td><td>One question with options. Check, then read the explanation.</td></tr><tr><td><strong>Knowledge check with feedback</strong></td><td>A whole quiz with a score, progress bar and reset.</td></tr><tr><td><strong>Fill in the blanks</strong></td><td>A sentence where you type the missing words.</td></tr><tr><td><strong>Matching pairs</strong></td><td>Terms on one side, meanings on the other.</td></tr><tr><td><strong>Ordering exercise</strong></td><td>Steps you put in the right order.</td></tr></tbody></table>
+<p>All of them keep your answers in the note. Open the note tomorrow and your last answers are still there. Most quizzes have a reset button.</p>
+<p>Write the question and the answer once. For example, a multiple choice question:</p>
+<pre><code class="language-xml">&lt;question id=&quot;osmosis-1&quot; prompt=&quot;Water moves toward...&quot; answer=&quot;1&quot; explanation=&quot;Water follows the higher solute concentration.&quot;&gt;
+  &lt;option&gt;less solute&lt;/option&gt;
+  &lt;option&gt;more solute&lt;/option&gt;
+&lt;/question&gt;
+</code></pre>
+<p><code>answer=&quot;1&quot;</code> is the second option. Counting starts at 0.</p>
+<h2>Generate a quiz from a note</h2>
+<p>If you saved a Gemini key (Settings › Smart features), or set up a local AI, Lumen can write a quiz from a note. Open the study menu in the note toolbar and choose <strong>Generate quiz</strong>. It writes questions with explanations and hints, and shows them before adding anything. Every question and flashcard it adds also shows a <strong>Report AI content</strong> link.</p>
+<h2>Paged and scored quizzes</h2>
+<p>In a <strong>Knowledge check with feedback</strong>, <code>layout=&quot;paged&quot;</code> shows one question at a time. Without it, all questions show together. The block shows your score as you go.</p>
+<h2>Share a quiz without answers</h2>
+<p>When you export a note as a PDF or a web page, leave <strong>Include answers</strong> off. You get a blank worksheet. See <a href="#export">Export and share</a>.</p>
+</section>
+<section id="home-planner-grades">
+<h1>Home, planner and grades</h1>
+<h2>Home</h2>
+<p>Home shows today. It has a greeting banner and these cards:</p>
+<ul>
+<li><strong>To-dos.</strong> Your own to-dos and every unticked checkbox from your notes. Type in <strong>Add a to-do</strong> and pick a due date. A checkbox from a note shows which note it came from, and ticking it ticks it in the note.</li>
+<li><strong>Calendar.</strong> The month with the agenda for the day you pick. Add a to-do or an event for that day.</li>
+<li><strong>Review.</strong> Cards waiting, your streak and the week ahead.</li>
+<li><strong>Paste banner.</strong> A shortcut to Paste as visual notes.</li>
+<li><strong>Recent notes.</strong> The notes you touched last.</li>
+</ul>
+<p>Turn cards on or off in <strong>Settings › Home › Cards on Home</strong>. Settings › Home also controls the banner and its scene, size and focus line, the background picture, and how many recent notes show.</p>
+<h3>Extra cards you add</h3>
+<p>Press <strong>Add widget</strong> on Home to add cards below the main ones:</p>
+<table><thead><tr><th>Widget</th><th>What it does</th></tr></thead><tbody><tr><td><strong>Countdown</strong></td><td>Days left until an exam, deadline or trip.</td></tr><tr><td><strong>Sticky note</strong></td><td>A scratch pad that stays on Home.</td></tr><tr><td><strong>Coming up</strong></td><td>To-dos and events in the next 7 days, including Canvas.</td></tr><tr><td><strong>Canvas grades</strong></td><td>Your courses and current grades from the last Canvas sync.</td></tr><tr><td><strong>Pinned notes</strong></td><td>Notes you marked as favorites.</td></tr><tr><td><strong>A note</strong></td><td>One note&#x27;s title and first lines.</td></tr><tr><td><strong>Study stats</strong></td><td>Cards waiting, streak and notes written.</td></tr><tr><td><strong>Focus timer</strong></td><td>25 minutes on, 5 off.</td></tr><tr><td><strong>Event timers</strong></td><td>Live countdowns to your next events and due to-dos.</td></tr></tbody></table>
+<p>Each widget has arrows to move it and a button to remove it.</p>
+<h2>Events and tags</h2>
+<p>Events have a date, an optional time and tags. Saved tags have colors. Add them from the calendar card.</p>
+<h2>Canvas</h2>
+<p>If your school uses Canvas, Lumen can read your due dates and grades.</p>
+<ol>
+<li>Open <strong>Settings › Sync &amp; backup › Canvas</strong> (under Connected apps).</li>
+<li>Enter your <strong>Canvas address</strong> (like <code>school.instructure.com</code>) and an <strong>access token</strong>. The token stays on this PC and Lumen uses it only to read your assignments.</li>
+<li>Press <strong>Sync</strong>.</li>
+</ol>
+<p>Canvas assignments then appear as to-dos and events. Press <strong>Sync</strong> again to refresh. Lumen sends one request for your classes and one more for each class.</p>
+<p>Add the <strong>Canvas assignments</strong> block to a note to see what is due soon with a <strong>Sync</strong> button.</p>
+<h2>Semester grades</h2>
+<p>Add a <strong>Semester grades</strong> block (the <code>/</code> menu). Each class has marks. A mark has points earned, points possible and a weight. Lumen shows each class&#x27;s percent and letter, and the semester GPA on the 4.0 scale (A 4.0, A- 3.7, B+ 3.3, down to F 0), weighted by credits.</p>
+<ul>
+<li>Leave <strong>earned</strong> empty for work that is not graded yet. It then counts toward your goal and not your grade.</li>
+<li>Give every mark in a class a <strong>weight</strong> or none of them. With no weights, the grade is total points earned over total points possible.</li>
+<li><strong>final</strong> is the school&#x27;s official grade, a letter like <code>A-</code> or a percent like <code>91.5</code>. It replaces the computed one.</li>
+<li><strong>target</strong> is the percent you want to finish with. Lumen shows the average you need on the work that is left.</li>
+</ul>
+<pre><code class="language-xml">&lt;gradebook id=&quot;grades-1&quot; title=&quot;Grades&quot; semester=&quot;Fall 2026&quot;&gt;
+  &lt;course name=&quot;Biology&quot; credits=&quot;4&quot; target=&quot;90&quot;&gt;
+    &lt;mark name=&quot;Quiz 1&quot; earned=&quot;18&quot; max=&quot;20&quot; weight=&quot;10&quot; /&gt;
+    &lt;mark name=&quot;Midterm&quot; earned=&quot;84&quot; max=&quot;100&quot; weight=&quot;30&quot; /&gt;
+    &lt;mark name=&quot;Final exam&quot; max=&quot;100&quot; weight=&quot;40&quot; /&gt;
+  &lt;/course&gt;
+&lt;/gradebook&gt;
+</code></pre>
+<p>To use grades from Canvas, write <code>source=&quot;canvas&quot;</code> on the block. A class you write yourself whose name matches a Canvas class takes Canvas&#x27;s grade, unless it has its own <code>final</code>.</p>
+</section>
+<section id="paste-ai">
+<h1>Paste as visual notes (AI import)</h1>
+<p>You can ask an AI assistant like ChatGPT, Gemini or Claude to explain a topic, then paste its answer into Lumen. Lumen turns it into a note with real quizzes, diagrams and flashcards.</p>
+<h2>Do it</h2>
+<ol>
+<li>Ask your AI assistant to explain the topic. For the best result, first press <strong>Copy AI prompt</strong> in the paste window and paste that into the AI chat. It teaches the AI to answer in Lumen&#x27;s format.</li>
+<li>Copy the AI&#x27;s answer.</li>
+<li>In Lumen press <strong>Ctrl+Shift+V</strong>. You can also use <strong>⋯ › Import › Paste as visual notes</strong>, or the banner on Home.</li>
+<li>Paste the text into the box.</li>
+<li>Leave <strong>Create a new note</strong> ticked to make a new note, or untick it to add the text to the note you have open.</li>
+<li>Press <strong>Paste as visual notes</strong>.</li>
+</ol>
+<p>If the AI wrapped its answer in a code fence, Lumen removes it for you.</p>
+<h2>Try it without an AI</h2>
+<p>Press <strong>Try an example</strong> in the paste window. It fills in a real AI answer about cellular respiration, ticks <strong>Create a new note</strong>, and you press <strong>Paste as visual notes</strong>.</p>
+<h2>Paste cleanup</h2>
+<p>If you paste plain Markdown, Lumen can offer to upgrade parts of it:</p>
+<ul>
+<li>Tables become Lumen tables.</li>
+<li>Numbered steps become a process diagram.</li>
+<li>Dated lists become a timeline.</li>
+<li>Question and answer pairs become flashcards.</li>
+<li>Multiple choice questions with answers become quizzes.</li>
+<li>Pros and cons become comparison cards.</li>
+<li>Lines starting with Note or Tip become callouts.</li>
+</ul>
+<p>You see the offer first and can skip it.</p>
+<h2>Other ways to add AI help</h2>
+<ul>
+<li><strong>Improve note</strong> rewrites a messy note into a clean page. You see the result next to your note, and your note changes only if you accept. Turn on the Improve button in Settings › Smart features.</li>
+<li><strong>Fix with AI</strong> appears when Lumen finds a problem in a note that it cannot fix itself.</li>
+<li><strong>Generate quiz</strong> writes a quiz from a note.</li>
+</ul>
+<p>These use Google Gemini (with your key) or a local AI on your PC. See <a href="#settings">Settings</a> and <a href="#privacy">Privacy</a> for what is sent.</p>
+<h2>Report a bad AI answer</h2>
+<p>Anything an AI writes in Lumen has a <strong>Report AI content</strong> link. It opens an email draft to the developer. Nothing is sent until you send it, and your note text is not included.</p>
+<h2>Let an AI work in Lumen directly</h2>
+<p>In <strong>Settings › Smart features › Connect an AI assistant</strong> you can start an AI server. Claude Desktop, Claude Code, ChatGPT and local apps can then find, read and edit your notes while Lumen is open. It runs on your PC only.</p>
+</section>
+<section id="themes-backgrounds">
+<h1>Themes, backgrounds and page look</h1>
+<h2>Theme and colors</h2>
+<p><strong>Settings › Appearance › Theme and color</strong> sets the theme and the accent color.</p>
+<p>Dark themes: <strong>Dark</strong>, <strong>Graphite</strong> (the default), <strong>Midnight</strong>, <strong>Obsidian</strong>, <strong>OLED black</strong>, <strong>Espresso</strong>, <strong>Evergreen</strong>, <strong>Dusk</strong>, <strong>Arctic</strong>, <strong>Ruby</strong>.
+Light themes: <strong>Light</strong>, <strong>Paper</strong>, <strong>Mint</strong>, <strong>Blossom</strong>, <strong>Sky</strong>, <strong>Lilac</strong>.</p>
+<p>The accent color is the color of buttons, highlights and the frame of learning blocks. Pick one of the eight swatches, or click the last one, the color wheel, to pick any color:</p>
+<ul>
+<li>Drag on the wheel. Going around it changes the color, and moving out from the middle makes it stronger. With the keyboard, Left and Right change the color and Up and Down its strength; hold Shift for bigger steps.</li>
+<li>Or type a HEX color such as <code>#4f8cff</code>.</li>
+<li>Click <strong>Done</strong>, or click away, to keep it. Choose one of the eight swatches to go back.</li>
+</ul>
+<p>Lumen keeps the color you pick but sets how light it is for each theme: lighter on dark themes, darker on light ones. That way text in the accent stays easy to read on every theme.</p>
+<p><strong>Settings › Appearance › Text</strong> sets:</p>
+<ul>
+<li><strong>App font</strong> for menus and buttons (Inter by default).</li>
+<li><strong>Note text</strong>: a serif font for note text and titles.</li>
+<li><strong>Page width</strong>: narrow, standard, wide or full.</li>
+<li><strong>Text size</strong>: small, default or large. Visual blocks grow with it.</li>
+</ul>
+<h2>One page&#x27;s icon, cover and music</h2>
+<p>Click <strong>+ Customize page</strong> under a note&#x27;s title, or the picture icon in the note toolbar. You can set:</p>
+<ul>
+<li>An <strong>icon</strong> (any emoji).</li>
+<li>A <strong>cover</strong>: a built-in gradient or a picture from your PC.</li>
+<li>The page&#x27;s <strong>font</strong>, <strong>width</strong> and <strong>background music</strong>.</li>
+</ul>
+<p>Page music plays a lo-fi track while the page is open. Settings › Sounds › Page music has a switch that stops every page from starting its music on its own.</p>
+<h2>Backgrounds</h2>
+<p>You can put a picture or a color behind your pages.</p>
+<ul>
+<li><strong>Everywhere:</strong> Settings › Home › <strong>Background</strong>. Choose a picture or a color or gradient. Turn on <strong>Also behind note pages</strong> to use it on notes too.</li>
+<li><strong>One note:</strong> <strong>⋯ › Background…</strong> in the note. It is saved with the note, syncs with it, and the web page export uses it.</li>
+</ul>
+<p>The picker has two tabs. <strong>Pictures</strong> has museum paintings and NASA images, and <strong>Choose a picture</strong> lets you use your own. <strong>Colors and gradients</strong> has plain colors and soft gradients.</p>
+<p><strong>Picture look</strong> sets how the picture sits behind the text:</p>
+<table><thead><tr><th>Look</th><th>Result</th></tr></thead><tbody><tr><td><strong>Clear</strong></td><td>The picture as is.</td></tr><tr><td><strong>Soft</strong></td><td>A little blur.</td></tr><tr><td><strong>Frosted</strong></td><td>More blur and a slight dim. This is the default.</td></tr><tr><td><strong>Dim</strong></td><td>Darker, with a little blur.</td></tr><tr><td><strong>Deep</strong></td><td>Darkest.</td></tr></tbody></table>
+<p>Pictures you add are kept as the original file, with nothing resized. PDF export has no background.</p>
+<h2>Home banner</h2>
+<p>Settings › Home › <strong>Banner</strong> lets you choose the banner scene (sky, aurora, rain, stars, paper, gradient or your own picture), the sun and moon, the banner color and size, the focus line and what the banner shows (date, counts, a continue link). Your name for the greeting is in Settings › <strong>You</strong>.</p>
+<h2>Motion</h2>
+<p><strong>Settings › Appearance › Motion › Enable background animation</strong> is on by default. Turn it off and the moving scenes on Home and the ambience layer hold still. Sounds are not affected. If Windows is set to reduce motion, Lumen holds everything still too.</p>
+<h2>Ambience and sounds</h2>
+<p><strong>Settings › Sounds</strong> has three parts:</p>
+<ul>
+<li><strong>Interface sounds</strong> (off by default). Turn on <strong>Play sounds</strong>, pick a <strong>Volume</strong> and a <strong>Sound pack</strong>, and open <strong>Choose each sound</strong> to pick which kinds play: interface clicks, scrolling, typing, diagrams and flashcards.</li>
+<li><strong>Background sound.</strong> Rain, Fireplace, Café, Forest, Ocean or Night, with its own volume. Turn on <strong>Keep playing in the background</strong> to keep the sound going while you work in another window.</li>
+<li><strong>Page music.</strong> Volume, and a switch for whether pages start their music on their own.</li>
+</ul>
+<p>The <strong>visual layer</strong> over your pages (Thunder and rain, Rain, Snow, Fireflies, Soft light, Petals, Stars, Embers, Dust in sunlight, Mist, Aurora or Light rays) is in <strong>Settings › Home › Weather and effects</strong>, with its own amount.</p>
+<p>Everything is built into Lumen and works offline.</p>
+</section>
+<section id="settings">
+<h1>Settings</h1>
+<p>Open <strong>Settings</strong> from the bottom of the sidebar. The search box at the top is ready to type in. Press <strong>Ctrl+F</strong> to jump back to it. A word also matches the names of groups and tabs, so &quot;drive&quot; or &quot;sound&quot; finds the right section.</p>
+<p>Each tab has groups. Click a group&#x27;s title to open or close it.</p>
+<p>At the top of the side list is <strong>You</strong>, a card with your picture and name. At the bottom are <strong>Help</strong>, <strong>Report a problem</strong>, the Lumen version and build, <strong>Privacy policy</strong> and <strong>Third-party notices</strong>.</p>
+<h2>You</h2>
+<ul>
+<li><strong>Your name</strong> and <strong>Your picture.</strong> Your name is used for the Home greeting and as the name on your cursor and sign-off.</li>
+<li><strong>Name tag while typing.</strong></li>
+<li><strong>Sign-off:</strong> your name, the date and an optional logo at the end of PDFs and web pages. See <a href="#export">Export and share</a>.</li>
+</ul>
+<h2>Appearance</h2>
+<ul>
+<li><strong>Theme and color:</strong> theme and accent color. The last accent swatch opens a color wheel for any color (see <a href="#themes-backgrounds">Themes, backgrounds and page look</a>).</li>
+<li><strong>Text:</strong> app font, note text, page width, text size.</li>
+<li><strong>Window layout:</strong> <strong>Search bar</strong> (in the sidebar or at the top) and <strong>Auto-hide sidebar</strong>.</li>
+<li><strong>Cards and lists:</strong> the card and list look, and <strong>Pointer glow</strong>.</li>
+<li><strong>Motion:</strong> Enable background animation and Block animations.</li>
+</ul>
+<h2>Home</h2>
+<ul>
+<li><strong>Banner:</strong> scene, sun and moon, banner color, size, the focus line and what the banner shows.</li>
+<li><strong>Background:</strong> behind the cards, also behind note pages, pictures, colors and gradients, your own picture, picture look.</li>
+<li><strong>Cards on Home:</strong> which of To-dos, Calendar, Review, Paste and Recent notes show, and how many recent notes.</li>
+<li><strong>Weather and effects:</strong> a visual layer over your pages, like rain, snow or fireflies.</li>
+</ul>
+<h2>Editor</h2>
+<ul>
+<li><strong>Typing:</strong> text cursor, text toolbar and editing cue.</li>
+<li><strong>Checklists:</strong> tick shape, done color, what a finished item looks like, optional yellow and red marks.</li>
+<li><strong>Opening and capture:</strong> what Lumen opens on (Home or your latest note), and the quick capture shortcut and tray.</li>
+<li><strong>Tags:</strong> pick tags automatically.</li>
+<li><strong>Page extras:</strong> <strong>Automatic emoji</strong> (picks an emoji from a note&#x27;s title, tags and text when it has none of its own; this happens on your PC), <strong>Code runs</strong>, <strong>Related notes</strong> and the <strong>Visual blocks tip.</strong></li>
+</ul>
+<h2>Sounds</h2>
+<p>Interface sounds, sound pack and volume, background sound and page music. See <a href="#themes-backgrounds">Themes, backgrounds and page look</a>.</p>
+<h2>Smart features</h2>
+<p>In Lumen Desktop the tab has two sections, and each setting folds open in place. In the browser it shows only <strong>Voice</strong>: <strong>Speech to text</strong> and <strong>Read aloud</strong>.</p>
+<h3>AI features</h3>
+<ul>
+<li><strong>Gemini key.</strong> Your <strong>Gemini API key</strong> (get one from Google AI Studio; Lumen allows up to 15 requests a day) and which model to use.</li>
+<li><strong>Predict code output, Improve note</strong> and <strong>Generate quiz.</strong></li>
+<li><strong>Local AI.</strong> Under Predict code output or Improve note, when they run on your own AI: the address and model of an AI that runs on your PC, like LM Studio or Ollama. <strong>Test local AI</strong> checks the connection. <strong>Refresh local AI models</strong> reloads the list. LM Studio&#x27;s address is usually <code>http://localhost:1234/v1</code>.</li>
+</ul>
+<h3>Voice, drawings and assistants</h3>
+<ul>
+<li><strong>Speech to text.</strong> Turns voice notes into text with a speech model that Lumen downloads once. Your audio stays on your PC.</li>
+<li><strong>Read aloud.</strong> The voice that reads notes to you: the natural voice (one download) or the system voice.</li>
+<li><strong>Skybridge drawings and handwriting.</strong> Where drawings from your iPad go, and handwriting reading.</li>
+<li><strong>Connect an AI assistant.</strong> Start the AI server, let an assistant edit live, and copy the guide files.</li>
+</ul>
+<p>Report bad AI output with <strong>Report AI content</strong>.</p>
+<h2>Sync &amp; backup</h2>
+<ul>
+<li><strong>Keep your PCs in sync.</strong> See <a href="#sync-backup">Backups and sync</a>.</li>
+<li><strong>Your data.</strong> Where Lumen keeps your notes, and export and import.</li>
+<li><strong>Restore from a backup.</strong> See <a href="#sync-backup">Backups and sync</a>.</li>
+<li><strong>Pictures.</strong> If you have older pictures stored inside notes, <strong>Move pictures</strong> moves them to files, after keeping a restore point.</li>
+<li><strong>Sync conflicts.</strong> Appears, with a badge on the tab, only when a note was changed on two PCs.</li>
+<li><strong>Sync log.</strong></li>
+<li><strong>Connected apps:</strong>
+<ul>
+<li><strong>Google Drive and Skybridge.</strong> Your Lumen folder in Google Drive, the daily backup, and <strong>Back up now.</strong></li>
+<li><strong>Canvas.</strong> Address, token and Sync.</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="sync-backup">
+<h1>Backups and sync</h1>
+<h2>Where your notes live</h2>
+<p>Lumen keeps your notes in a database on your PC, in your Windows user folder. <strong>Settings › Sync &amp; backup › Your data</strong> shows the exact path. Nothing is uploaded unless you set up one of the features below.</p>
+<h2>Backups</h2>
+<p>Lumen makes backups on its own, and you can make one whenever you want.</p>
+<ul>
+<li><strong>Daily snapshots.</strong> Each time Lumen starts, it saves a copy of the database next to it, at most once every 20 hours. The seven newest are kept.</li>
+<li><strong>Back up now</strong> (<strong>Ctrl+Shift+E</strong>). Saves your whole workspace as one file you choose a place for. It holds your notes, answers, review history and settings.</li>
+<li><strong>Restore points.</strong> Before Lumen does anything big (restoring a backup, moving pictures), it keeps a restore point of your notes.</li>
+</ul>
+<h3>Restore from a backup</h3>
+<ol>
+<li>Open <strong>Settings › Sync &amp; backup › Restore from a backup</strong>.</li>
+<li>The list shows daily backups, restore points and any backup file you choose. Each has a date and a note count. Press <strong>Refresh</strong> if a new one is missing.</li>
+<li>Press <strong>Preview</strong> to compare it with your notes. Each note is marked missing, different or matching.</li>
+<li>Restore everything, or tick single notes.</li>
+</ol>
+<p>Lumen keeps a restore point of your current notes first, so a restore can be undone.</p>
+<h3>Import</h3>
+<p><strong>Ctrl+O</strong> imports a Lumen backup or a Markdown file. Imports add notes. A note with an id you already have gets a new id, so both copies are kept. Your current look and settings stay as they are.</p>
+<h2>Back up to Google Drive</h2>
+<p>This uses Google Drive for desktop. Lumen only writes into a folder on your PC, and Google Drive uploads it.</p>
+<ol>
+<li>Install Google Drive for desktop and sign in.</li>
+<li>In Lumen open <strong>Settings › Sync &amp; backup › Google Drive and Skybridge.</strong></li>
+<li>Under <strong>Lumen folder</strong>, choose a folder inside Google Drive, like <code>G:\My Drive\Lumen Inbox</code>.</li>
+<li>Turn on <strong>Daily backup to this folder.</strong> Once a day Lumen saves a full backup in a <code>Backups</code> folder (the last 7) and a readable copy of each note.</li>
+<li>Press <strong>Back up now</strong> to test it.</li>
+</ol>
+<p>Drive can also copy big files (pictures, 3D models, PDFs, videos). There is a row for each in the same tab.</p>
+<h2>Keep two PCs in sync</h2>
+<p>If you use Lumen on two PCs, you can keep them the same. Notes, folders, to-dos, events and study progress all match.</p>
+<ol>
+<li>Set a <strong>Lumen folder</strong> in Google Drive on both PCs (above).</li>
+<li>On each PC open <strong>Settings › Sync &amp; backup › Keep your PCs in sync.</strong></li>
+<li>Turn on <strong>Sync through Google Drive.</strong> It shows how many other PCs it found.</li>
+<li>Optional: turn on <strong>Also link directly on the same Wi-Fi.</strong> It is faster and encrypted, and falls back to Drive if the link drops.</li>
+</ol>
+<p>Lumen checks every 10 seconds while you are not typing. Press <strong>Sync now</strong> to check right away. Changes from Drive show up after Google Drive uploads them.</p>
+<p>If you edit the same note on two PCs before they sync, Lumen keeps both. One is saved as a copy ending in &quot;(sync conflict)&quot;. A badge appears on the Sync tab. Open <strong>Sync conflicts</strong> to compare them.</p>
+<p><strong>Sync appearance</strong> is off by default and each PC chooses for itself. When on, your theme, fonts and layout match on every PC. API keys, your local AI address, window size and volumes never sync.</p>
+<h2>Windows Firewall</h2>
+<p>The direct link needs Lumen allowed on private networks. Windows asks the first time. A guest Wi-Fi often blocks PC-to-PC traffic. If direct linking fails, use Drive sync.</p>
+</section>
+<section id="export">
+<h1>Export and share</h1>
+<h2>Export a note as a PDF or a web page</h2>
+<ol>
+<li>Open the note.</li>
+<li>Click the download icon in the note toolbar (<strong>Export note</strong>), then <strong>PDF or web page…</strong>. You can also use <strong>⋯ › PDF or web page…</strong>.</li>
+<li>Choose:</li>
+</ol>
+<table><thead><tr><th>Option</th><th>Choices</th></tr></thead><tbody><tr><td><strong>Format</strong></td><td><strong>PDF</strong> or <strong>Web page</strong></td></tr><tr><td><strong>Colors</strong></td><td>Your current theme, or <strong>Light, for printing</strong></td></tr><tr><td><strong>Paper</strong> (PDF)</td><td>Letter, A4, Legal, A5, or <strong>Long page</strong> (one page as tall as the note, nothing split)</td></tr><tr><td><strong>Include answers</strong></td><td>Quiz answers, flashcard backs and practice answers. Leave off for a blank worksheet.</td></tr><tr><td><strong>Include videos</strong> (web page)</td><td>Puts the video files inside the page. It makes the file bigger.</td></tr><tr><td><strong>Add a sign-off</strong></td><td>Your name, the date and your logo at the end</td></tr></tbody></table>
+<ol start="4">
+<li>Press <strong>Export PDF</strong> or <strong>Export web page</strong>.</li>
+</ol>
+<h3>The web page</h3>
+<p>A web page export is <strong>one .html file</strong>. Pictures, fonts and videos are inside it. It opens in any browser, works offline, and you can email it or put it on a website. Quizzes, flashcards, sliders, tabs and the computer architecture blocks work in the page. Diagrams, charts, 3D models and PDFs show as still pictures. Answers you give in the exported page are not saved. The page has a real phone layout.</p>
+<h3>The PDF</h3>
+<p>Diagrams, charts and simulations are drawn as still pictures, with every tab and hidden section opened. A note&#x27;s background picture is not part of a PDF.</p>
+<h2>Sign-off</h2>
+<p>A sign-off puts your name, the date and an optional logo at the end of an export. Set it up in <strong>Settings › You › Sign-off</strong>, or tick <strong>Add a sign-off</strong> in the export window. To use your own logo, press <strong>Add your logo</strong> and choose a picture. Lumen ships without any logo, so a logo only shows if you add one.</p>
+<h2>Markdown and backups</h2>
+<ul>
+<li><strong>⋯ › Markdown file</strong> saves the note&#x27;s exact source as a <code>.md</code> file.</li>
+<li><strong>Ctrl+Shift+E</strong> saves your whole workspace.</li>
+<li><strong>Import Markdown files</strong> at the bottom of the sidebar adds <code>.md</code> files as notes.</li>
+</ul>
+<h2>Draft a note from a PDF</h2>
+<p><strong>⋯ › Import › Draft a note from a PDF…</strong> reads a PDF and starts a note from it.</p>
+</section>
+<section id="privacy">
+<h1>Privacy</h1>
+<p>The full policy is in <strong>Settings › Privacy policy</strong>, at the bottom of the side list. The short version:</p>
+<ul>
+<li>Lumen has <strong>no account</strong> and no sign-in.</li>
+<li>Your notes, pictures, files, to-dos, events, flashcard history and settings are stored <strong>only on your PC</strong>.</li>
+<li>Lumen has <strong>no analytics</strong>, no crash reports, no advertising and no tracking.</li>
+<li>Lumen connects to the internet <strong>only for features you turn on</strong>, and only to the service that feature needs.</li>
+</ul>
+<h2>What each feature sends</h2>
+<table><thead><tr><th>Feature</th><th>What is sent</th><th>To where</th></tr></thead><tbody><tr><td><strong>Smart features (Gemini)</strong></td><td>The text of the note or selection you ask it to work on</td><td>Google&#x27;s Gemini API, using the key you entered. Google&#x27;s own terms apply.</td></tr><tr><td><strong>Local AI</strong></td><td>The same text</td><td>Only to an AI app on your own PC (LM Studio, Ollama)</td></tr><tr><td><strong>Backup to Google Drive</strong></td><td>A copy of your workspace</td><td>Your own Google Drive folder, through Google Drive for desktop</td></tr><tr><td><strong>PC sync</strong></td><td>Your notes, through Drive or an encrypted link</td><td>Your other PC. The direct link uses no server.</td></tr><tr><td><strong>Canvas</strong></td><td>A request for your course data</td><td>The Canvas address you entered</td></tr><tr><td><strong>Voice and read aloud</strong></td><td>A one-time download of a speech model. Your audio stays on your PC.</td><td>Hugging Face (download only)</td></tr><tr><td><strong>Pictures and videos from the web</strong></td><td>A normal web request for that picture or video</td><td>The website it comes from. YouTube videos use youtube-nocookie.com.</td></tr><tr><td><strong>Report a problem / Report AI content</strong></td><td>Nothing, until you press send in your own email app</td><td>The developer</td></tr></tbody></table>
+<p>Lumen does not sell or share your information.</p>
+<p>Your data is not encrypted on disk. Anyone who can sign in to your Windows account can read it. Use a Windows password and lock your PC. Files in Google Drive follow Google&#x27;s rules.</p>
+<h2>Delete everything</h2>
+<p>Uninstall Lumen, then delete its data folder. <strong>Settings › Sync &amp; backup › Your data</strong> shows where it is. Export a backup first if you want to keep your notes.</p>
+</section>
+<section id="shortcuts">
+<h1>Keyboard shortcuts</h1>
+<table><thead><tr><th>Keys</th><th>What it does</th></tr></thead><tbody><tr><td><strong>Ctrl+N</strong></td><td>New note</td></tr><tr><td><strong>Ctrl+O</strong></td><td>Import a backup or a Markdown file</td></tr><tr><td><strong>Ctrl+Shift+E</strong></td><td>Back up your workspace</td></tr><tr><td><strong>Ctrl+K</strong></td><td>Find anything. Press again to leave the box.</td></tr><tr><td><strong>Ctrl+\</strong></td><td>Show or hide the sidebar</td></tr><tr><td><strong>Ctrl+Shift+M</strong></td><td>Switch between Visual, Source and Split</td></tr><tr><td><strong>Ctrl+Shift+V</strong></td><td>Paste as visual notes</td></tr><tr><td><strong>/</strong></td><td>Add a block (when you are not typing in a field)</td></tr><tr><td><strong>Esc</strong></td><td>Leave reading mode, or close a window</td></tr><tr><td><strong>Ctrl+Alt+Space</strong></td><td>Quick capture from any app (change it in Settings › Editor › Opening and capture)</td></tr><tr><td><strong>Ctrl+F</strong></td><td>In Settings: jump to the search box</td></tr></tbody></table>
+<h2>In a note</h2>
+<table><thead><tr><th>Keys</th><th>What it does</th></tr></thead><tbody><tr><td><strong>Ctrl+B / Ctrl+I / Ctrl+U</strong></td><td>Bold, italic, underline</td></tr><tr><td><strong>Alt+↑ / Alt+↓</strong></td><td>Move the picked block up or down</td></tr><tr><td><strong>Triple-click</strong></td><td>Select a block</td></tr><tr><td><strong>Ctrl+C / Ctrl+X / Ctrl+V</strong></td><td>Copy, cut and paste selected blocks</td></tr><tr><td><strong>Ctrl+Z / Ctrl+Shift+Z</strong></td><td>Undo and redo in a block&#x27;s editor</td></tr></tbody></table>
+<h2>While studying</h2>
+<table><thead><tr><th>Keys</th><th>What it does</th></tr></thead><tbody><tr><td><strong>Space</strong></td><td>Show the answer</td></tr><tr><td><strong>1 / 2 / 3 / 4</strong></td><td>Again, Hard, Good, Easy</td></tr><tr><td><strong>H</strong></td><td>Show the hint</td></tr><tr><td><strong>Enter</strong></td><td>Check a question</td></tr></tbody></table>
+</section>
+<section id="troubleshooting">
+<h1>Troubleshooting</h1>
+<h2>A note or a block looks wrong</h2>
+<ul>
+<li>Switch to <strong>Source</strong> or <strong>Split</strong> view. Blocks Lumen cannot show are left as source with a reason under them.</li>
+<li>Every block needs a closing tag (<code>&lt;/card&gt;</code>) or a <code>/&gt;</code> at the end. Attribute values need quotes.</li>
+<li>A <code>&lt;</code> or <code>&amp;</code> inside a block&#x27;s text needs to be written <code>&amp;lt;</code> and <code>&amp;amp;</code>, or wrapped in <code>&lt;![CDATA[ … ]]&gt;</code>.</li>
+<li>Quiz answers are counted from 0. <code>answer=&quot;0&quot;</code> is the first option.</li>
+</ul>
+<h2>I lost a note or changed it by mistake</h2>
+<ol>
+<li>Open the note and choose <strong>⋯ › Version history</strong>.</li>
+<li>If the note is gone, open <strong>Settings › Sync &amp; backup › Restore from a backup</strong>. Look in the daily backups and restore points. Preview, then restore just that note.</li>
+</ol>
+<h2>The saved indicator does not say saved</h2>
+<p>Wait a moment and look again. If it keeps showing a problem, Lumen could not write to disk. Check that your disk has space, then make a backup with <strong>Ctrl+Shift+E</strong>.</p>
+<h2>Menus or scrolling feel slow</h2>
+<ul>
+<li>Turn off <strong>Settings › Appearance › Motion › Enable background animation.</strong></li>
+<li>Choose the <strong>Clear</strong> picture look or a plain color for the background.</li>
+<li>Turn off the visual layer in Settings › Home › Weather and effects.</li>
+<li>If you have older pictures inside notes, use <strong>Settings › Sync &amp; backup › Pictures › Move pictures</strong>. Notes then save faster.</li>
+</ul>
+<h2>Google Drive backup does nothing</h2>
+<ul>
+<li>Check that <strong>Lumen folder</strong> points to a folder inside Google Drive and that Google Drive for desktop is running.</li>
+<li>Press <strong>Back up now</strong> and read the message under it.</li>
+<li>Look in the <code>Backups</code> folder in that folder.</li>
+</ul>
+<h2>PCs do not sync</h2>
+<ul>
+<li>Both PCs need the same Lumen folder in Google Drive and <strong>Sync through Google Drive</strong> on.</li>
+<li>Google Drive must finish uploading before the other PC can see the change.</li>
+<li>For the direct link, allow Lumen through Windows Firewall on private networks. Guest Wi-Fi often blocks it.</li>
+<li>Press <strong>Sync now</strong> and read the status line.</li>
+</ul>
+<h2>Gemini does not answer</h2>
+<ul>
+<li>Check the <strong>Gemini API key</strong> in Settings › Smart features.</li>
+<li>Lumen allows up to 15 Gemini requests a day. It tells you when you reach it.</li>
+<li>Check your internet connection.</li>
+</ul>
+<h2>Local AI does not connect</h2>
+<ul>
+<li>Start the AI app first (LM Studio or Ollama) and load a model.</li>
+<li>Check the <strong>Local AI address</strong>. LM Studio&#x27;s is usually <code>http://localhost:1234/v1</code>.</li>
+<li>Press <strong>Test local AI</strong>, then <strong>Refresh local AI models.</strong></li>
+</ul>
+<h2>Voice or read aloud does not work</h2>
+<p>The first time, Lumen downloads a voice model, so it needs internet once. Check your microphone is allowed in Windows privacy settings.</p>
+<h2>No sound</h2>
+<p>Sound effects are off by default. Turn them on in Settings › Sounds › Interface sounds. Nothing plays while Lumen is hidden or another window is in front.</p>
+<h2>Still stuck</h2>
+<p>Open <strong>Settings</strong> and press <strong>Report a problem</strong> at the bottom of the side list. It opens an email draft with your Lumen version. Describe what happened and what you expected. The draft never includes your notes.</p>
+</section>
+</main>
+</div>
+</body>
+</html>
